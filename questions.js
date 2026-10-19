@@ -232,7 +232,7 @@ window.QUESTION_BANK = [
     "marks": 4,
     "negative": 1,
     "type": "mcq",
-    "image": "images/Hypoglossal Nerve.jpg",
+    "image": "images/Hypoglossal.jpg",
     "options": [
       "Glossopharyngeal nerve",
       "Accessory nerve",
