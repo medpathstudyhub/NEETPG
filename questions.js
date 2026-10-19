@@ -232,7 +232,7 @@ window.QUESTION_BANK = [
     "marks": 4,
     "negative": 1,
     "type": "mcq",
-    "image": "images/Hypoglossal.jpg",
+    "image": "images/Hypoglossal Nerve.jpg",
     "options": [
       "Glossopharyngeal nerve",
       "Accessory nerve",
@@ -290,5 +290,54 @@ window.QUESTION_BANK = [
       "1 artery, 1 vein"
     ],
     "correctIndex": 2
+  },
+  {
+    "id": "manual-000005",
+    "subject": "Anatomy",
+    "text": "Which nerve root level is responsible for meralgia paresthetica? (2025)",
+    "explanation": "(B) L2 and L3\nMeralgia paresthetica is a clinical syndrome characterized by pain, tingling, numbness, or burning sensations over the anterolateral aspect of the thigh. This condition is caused by the entrapment or compression of the lateral femoral cutaneous nerve. This nerve is a purely sensory nerve that arises from the lumbar plexus. Specifically, it is formed from the dorsal divisions of the L2 and L3 spinal nerve roots. The nerve emerges from the lateral border of the psoas major muscle, travels across the iliacus muscle, and then passes under or through the\ninguinal ligament near the anterior superior iliac spine. It is at this point, as it exits the pelvis, that it is most vulnerable to compression, leading to the symptoms of meralgia paresthetica.",
+    "marks": 4,
+    "negative": 1,
+    "type": "mcq",
+    "options": [
+      "T12 and L1",
+      "L2 and L3",
+      "L2, L3 and L4",
+      "L1 and L2"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "manual-000006",
+    "subject": "Anatomy",
+    "text": "Which anatomical structure is lined by the epithelium shown in the image? (2025)",
+    "explanation": "(B) Ureter\nThe image shows a histological section of transitional epithelium, also known as urothelium. This is a specialized type of stratified epithelium that is unique to the urinary tract. Its key feature is the presence of large, domeshaped or \"umbrella\" cells on its luminal\nsurface. This epithelium has the remarkable ability to stretch and recoil to accommodate changes in urine volume without rupturing.\nUrothelium lines the renal pelvis, the ureters, the urinary bladder, and the proximal part of the urethra. The esophagus (A) is lined by nonkeratinized stratified squamous epithelium. The fallopian tube (C) is lined by simple columnar ciliated epithelium. The trachea (D) is lined by pseudostratified ciliated columnar epithelium with goblet cells. The appearance in the image is definitively urothelium.",
+    "marks": 4,
+    "negative": 1,
+    "type": "mcq",
+    "image": "images/ureter.jpg",
+    "options": [
+      "Esophagus",
+      "Ureter",
+      "Fallopian tube",
+      "Trachea"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "manual-000007",
+    "subject": "Anatomy",
+    "text": "A girl presents with a foot injury following a history of forceful eversion of the foot. Which structure is most likely to be affected? (2025)",
+    "explanation": "Ans : Deltoid ligament\nAnkle sprains are common injuries, but the ligaments affected depend on the mechanism of injury. The vast majority of ankle sprains (over 85%) are inversion injuries, where the foot rolls inward, stressing the ligaments on the lateral (outer) side of the ankle. These are the anterior talofibular ligament (A), the posterior talofibular ligament (C), and the calcaneofibular ligament (D). In contrast, a forceful eversion\ninjury, where the foot is twisted outward, puts stress on the ligaments on the medial (inner) side of the ankle. The primary stabilizer on the medial side is the deltoid ligament. This is a very strong, fan-shaped ligament complex that connects the medial malleolus of the tibia to the talus, calcaneus, and navicular bones. A significant eversion force is required to sprain or tear the deltoid ligament.",
+    "marks": 4,
+    "negative": 1,
+    "type": "mcq",
+    "options": [
+      "Anterior talofibular ligament",
+      "Deltoid ligament",
+      "Posterior talofibular ligament",
+      "Calcaneofibular ligament"
+    ],
+    "correctIndex": 1
   }
 ];
