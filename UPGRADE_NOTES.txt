@@ -1,0 +1,23 @@
+NEET PG CBT MOCK TEST V4 — UPGRADE NOTES
+
+Included in this ZIP
+- Student mode selector: Subject-wise practice, Strict full test, Mixed practice.
+- Dynamic subject dropdown with per-subject question counts.
+- Strict full-test logic: minimum 180-question bank, 5 sections × 36 questions, 42 minutes per section, auto-advance on timeout, no return to prior sections.
+- Admin manual question editor with unique IDs, duplicate text check, MCQ, multiple-response, true/false, short-answer and numeric questions.
+- Existing Excel/CSV import, question bank, result report and Apps Script email setup retained.
+
+IMPORTANT
+The bundled bank contains only sample questions. Strict full-test mode will not start until at least 180 questions are published. This prevents falsely representing a small sample bank as a full exam. Strict mode selects 180 questions from the bank; ensure the question bank has the mix/ordering you intend for Sections A–E before the exam. This starter does not yet enforce a particular subject mix per section.
+
+Question bank workflow
+1. Open admin.html.
+2. Import Excel/CSV and/or add questions manually.
+3. Check all imported answers and IDs.
+4. Download updated questions.js.
+5. Replace the repository questions.js and publish the commit.
+
+Google Apps Script email setup remains documented in GOOGLE_APPS_SCRIPT_SETUP.md. The public Apps Script endpoint is quota-limited and should be tested before use.
+
+Security / suitability
+This is a free static practice project. Answer keys are delivered to the browser and are inspectable; client-side scores can be manipulated. Do not use as a secure/high-stakes exam platform. Admin.html is not password-protected. Do not upload student personal data to the public repository.

@@ -1,0 +1,11 @@
+NEET PG Mock Test — Quick Checklist
+[ ] Replace ADMIN_EMAIL in Code.gs
+[ ] Run checkMailQuota and authorize MailApp
+[ ] Deploy Apps Script as Web App: Execute as Me, access Anyone
+[ ] Copy /exec URL into config.js
+[ ] Set enabled: true
+[ ] Upload project files to GitHub repository root
+[ ] Enable GitHub Pages from main / (root)
+[ ] Test with admin's own email address
+[ ] Verify both admin and student emails and HTML attachments
+[ ] Review public endpoint abuse/security caveats before sharing widely
