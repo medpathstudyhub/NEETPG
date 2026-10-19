@@ -257,5 +257,22 @@ window.QUESTION_BANK = [
       "Right 6th aortic arch"
     ],
     "correctIndex": 1
+  },
+  {
+    "id": "manual-000003",
+    "subject": "Anatomy",
+    "text": "Which of the following structures is not transmitted through the structure labeled A in the image? (2025)",
+    "explanation": "The pointer labeled \"A\" indicates a nerve branching off the main spinal nerve. While spinal nerves are mixed, their terminal branches can be specialized. If we interpret \"A\" as a purely cutaneous nerve—a terminal branch destined only for the skin—it would not contain all fiber\ntypes. A cutaneous nerve's job is to provide sensation and manage autonomic functions in the skin. Therefore, it would carry : \n1. GSA (General Somatic Afferent) fibers for sensory information like touch, pain, and temperature from the skin.\n2. GVE (General Visceral Efferent) fibers, which are postganglionic sympathetics controlling sweat glands, arrector pili muscles, and blood vessel diameter in the skin. \nIt would also serve as a pathway for some GVA (General Visceral Afferent) pain fibers. However, since this branch goes only to the skin and not to any voluntary muscle, it would completely lack GSE (General Somatic Efferent) fibers. GSE fibers are the motor neurons that specifically innervate skeletal muscle, and they would travel in different branches destined for muscles. Thus, a cutaneous nerve does not carry.\nGSE fibers",
+    "marks": 4,
+    "negative": 1,
+    "type": "mcq",
+    "image": "images/GSE.jpg",
+    "options": [
+      "GSA",
+      "GVA",
+      "GSE",
+      "GVE"
+    ],
+    "correctIndex": 2
   }
 ];
