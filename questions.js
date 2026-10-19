@@ -274,5 +274,21 @@ window.QUESTION_BANK = [
       "GVE"
     ],
     "correctIndex": 2
+  },
+  {
+    "id": "manual-000004",
+    "subject": "Anatomy",
+    "text": "What are the contents of Umbilical cord? (2025)",
+    "explanation": "(C) 2 arteries, 1 vein\nThe umbilical cord is the lifeline connecting the fetus to the placenta. In a normal, fully developed umbilical cord, there are three blood vessels encased in a gelatinous substance called Wharton's jelly. These vessels are two umbilical arteries and one umbilical vein. The\ntwo umbilical arteries carry deoxygenated blood and waste products away from the fetus to the placenta. The single umbilical vein carries oxygenated, nutrient-rich blood from the placenta to the fetus. Initially, there are two umbilical veins, but the right umbilical vein typically obliterates early in fetal development, leaving only the left one to persist. The presence of only a single umbilical artery instead of two can sometimes be associated with other congenital anomalies.",
+    "marks": 4,
+    "negative": 1,
+    "type": "mcq",
+    "options": [
+      "2 arteries, 2 veins",
+      "1 artery, 2 veins",
+      "2 arteries, 1 vein",
+      "1 artery, 1 vein"
+    ],
+    "correctIndex": 2
   }
 ];
