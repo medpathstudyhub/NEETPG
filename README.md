@@ -125,3 +125,8 @@ The student entry page (`index2.html`) includes four modes: Subject-wise practic
 ## Subject-wise topic catalogue (zero-question topics)
 
 The admin page includes a Subject-wise Topic Manager. Select a subject, paste one topic per line, and click Add topics to catalogue. Download `topics.js` and publish it beside `questions.js` to make those topics available on GitHub Pages, including topics with zero questions. Questions can be added later and tagged with a catalogue topic. When publishing, upload both files together.
+
+
+## Subject emoji UI update
+
+`subject-config.js` provides display-only subject emoji labels for the homepage cards, topic directory heading, quiz subject selector, and admin subject selectors. Canonical subject values, question-bank data, topic matching, IDs, timers, and scoring are unchanged. Include `subject-config.js` when publishing the updated project.
