@@ -10,6 +10,12 @@
 
 **Important:** this is inspired by general computer-based examination layouts. It is not the official NBEMS/NBE interface. Actual NEET PG is principally a single-best-answer MCQ examination; the other formats below are custom practice formats, not a claim about official exam question types.
 
+## MEDPATH Study Hub navigation
+- `index.html` is the new MEDPATH STUDY HUB front page with year tabs.
+- `index2.html` is the preserved NEET PG quiz entry page. It accepts `?subject=Physiology` and `?subject=Physiology&topic=Neurotransmitters` for preselected subject/topic practice.
+- `topics.html` is the separate Topic Directory Explorer. A subject shows a topic directory when questions contain a `topic` field; subjects with no topics go directly to subject practice.
+- Admin manual entry and Excel/CSV imports support the optional `Topic` field. The import workbook included in the ZIP has a `Topic` column.
+
 ## Start locally
 Extract the ZIP, then open `index.html`. If browser restrictions affect local images, run a local web server in this folder (`python -m http.server 8000`) and visit `http://localhost:8000`.
 
@@ -106,3 +112,16 @@ The current bundled bank is a small illustrative sample, not 180 questions. Stri
 5. Replace the repository's `questions.js` with the downloaded file and commit/publish it to GitHub Pages. The browser editor is a local authoring tool, not a shared database; refreshing the admin page before export discards its unsaved session changes.
 
 Excel/CSV import remains available. You can combine imported and manually authored questions in the same admin session, then export one consolidated bank. Always review imported correct answers and explanations before publishing.
+
+
+## Image reliability tips
+Use relative paths like `images/hypoglossal-nerve.jpg` with lowercase filenames and hyphens. The path must match the published file name and case exactly. Upload the image into the `images/` folder and commit it to GitHub along with `questions.js`. JPG/JPEG and PNG are both supported; PNG is not inherently more reliable. PNG is usually suitable for line diagrams and labels; JPG is often smaller for photographs. The quiz now URL-encodes spaces in relative image paths, but avoid spaces and special characters for fewer errors. A broken-image message indicates a missing file/path or filename-case mismatch.
+
+
+### Topic-wise practice (updated)
+The student entry page (`index2.html`) includes four modes: Subject-wise practice, Topic-wise practice, Mixed question practice, and Strict full-length mock test. Topic-wise practice enables the subject and topic dropdowns and filters the eligible questions to records matching both `subject` and `topic`. The topic dropdown is generated from topic values already present in `questions.js`. The number-of-questions field defaults to the maximum available for the current selection (up to 180) and remains editable. Topic directory links open `index2.html` directly in Topic-wise practice. Existing questions without a `topic` remain available in subject-wise and mixed practice.
+
+
+## Subject-wise topic catalogue (zero-question topics)
+
+The admin page includes a Subject-wise Topic Manager. Select a subject, paste one topic per line, and click Add topics to catalogue. Download `topics.js` and publish it beside `questions.js` to make those topics available on GitHub Pages, including topics with zero questions. Questions can be added later and tagged with a catalogue topic. When publishing, upload both files together.

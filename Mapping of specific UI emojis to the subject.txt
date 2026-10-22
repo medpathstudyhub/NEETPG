@@ -1,0 +1,21 @@
+// Mapping of specific UI emojis to their corresponding exact subject key names
+const SUBJECT_EMOJIS={
+  "Anatomy":"💀",
+  "Physiology":"🫀",
+  "Biochemistry":"🧬",
+  "Pathology":"🔬",
+  "Microbiology":"🧫",
+  "Pharmacology":"💊",
+  "Forensic Medicine":"🔍",
+  "Community Medicine":"🛡️",
+  "General Medicine":"🩺",
+  "General Surgery":"🩻",
+  "Obstetrics & Gynaecology":"🤰",
+  "Paediatrics":"🧸",
+  "Ophthalmology":"👁️",
+  "ENT":"👂",
+  "Orthopaedics":"🦴",
+  "Psychiatry":"🧠",
+  "Dermatology":"🧴",
+  "Radiology":"☢️",
+  "Anaesthesiology":"💉"
