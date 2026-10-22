@@ -21,3 +21,7 @@ Google Apps Script email setup remains documented in GOOGLE_APPS_SCRIPT_SETUP.md
 
 Security / suitability
 This is a free static practice project. Answer keys are delivered to the browser and are inspectable; client-side scores can be manipulated. Do not use as a secure/high-stakes exam platform. Admin.html is not password-protected. Do not upload student personal data to the public repository.
+
+Topic-wise practice update: added Topic-wise practice mode to index2.html, subject-specific topic dropdown, count/time calculation from the selected topic, and direct mode selection from topics.html links. Updated admin.js uses subject-coded manual IDs (e.g. ANAT-MAN-000001).
+
+NEW: Subject-wise Topic Manager allows multiple topics to be created before questions exist. Export topics.js and publish it beside questions.js. Student topic dropdown and Directory Explorer include zero-question catalogue topics.

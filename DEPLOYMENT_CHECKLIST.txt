@@ -9,3 +9,9 @@ NEET PG Mock Test — Quick Checklist
 [ ] Test with admin's own email address
 [ ] Verify both admin and student emails and HTML attachments
 [ ] Review public endpoint abuse/security caveats before sharing widely
+
+MEDPATH Study Hub update:
+- index.html is the new landing page; index2.html is the quiz page.
+- topics.html builds topic directories from the optional topic property in questions.js.
+- Use the included NEET_PG_Question_Bank_Import_Template.xlsx; Topic is optional.
+- Publish images/ files with questions.js. Keep exact filename casing.
