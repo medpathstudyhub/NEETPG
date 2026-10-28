@@ -1,0 +1,659 @@
+/* Backup only. The live website uses questions/<subject>.js plus question-loader.js. */
+window.QUESTION_BANK = [
+  {
+    "id": "PHYS-MAN-000001",
+    "subject": "Physiology",
+    "text": "Homeostasis is called as dynamic equilibrium because __________",
+    "explanation": "Correct Answer: D. Body maintains an internal balance within fluctuating limits\nExplanation: Homeostasis is called dynamic equilibrium because the body maintains an internal balance within fluctuating limits. It describes the maintenance of nearly constant conditions in the internal environment despite changes in the outside world. A number of variables such as body temperature, blood sugar levels, blood pH, etc. are regulated within a range of values (homeostatic ranges) and not at fixed values. These variables are not given equal importance. There is a hierarchy of importance so that the constancy of certain variables may be altered markedly to maintain others within their normal range. For example, respiratory or metabolic compensation to maintain blood pH. The disruption of homeostasis either due to extreme environmental challenge or a breakdown of internal homeostatic mechanisms is termed as a disease.",
+    "marks": 4,
+    "negative": 1,
+    "type": "mcq",
+    "topic": "001 Homeostasis And Cellular Physiology",
+    "options": [
+      "All variables are given equal importance",
+      "Can achieve a constancy in extreme environmental challenge",
+      "The set-point for all homeostatic variables is always fixed",
+      "Body maintains an internal balance within fluctuating limits"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "BIOC-MAN-000001",
+    "subject": "Biochemistry",
+    "text": "Which of the following is an aldose sugar?",
+    "explanation": "Correct Answer: D. Erythrose\nErythrose is not a ketose sugar but an aldose sugar as it has an aldehyde group in it.\nErythrulose, ribulose, and fructose are ketose sugars as they have a ketone group in them.",
+    "marks": 4,
+    "negative": 1,
+    "type": "mcq",
+    "topic": "001 Chemistry Of Carbohydrates, Amino Sugars And Mucopolysaccharides",
+    "options": [
+      "Erythrulose",
+      "Ribulose",
+      "Fructose",
+      "Erythrose"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "BIOC-001-000002-M",
+    "subject": "Biochemistry",
+    "text": "Which of the following two monosaccharides are constituents of lactose?",
+    "explanation": "Lactose is a disaccharide that consists of galactose and glucose linked by a b-1,4-glycosidic linkage.",
+    "marks": 4,
+    "negative": 1,
+    "type": "mcq",
+    "topic": "001 Chemistry Of Carbohydrates, Amino Sugars And Mucopolysaccharides",
+    "options": [
+      "Glucose and Fructose",
+      "Glucose and Mannose",
+      "Glucose and Galactose",
+      "Glucose and Glucose"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "BIOC-002-000001-M",
+    "subject": "Biochemistry",
+    "text": "Which of the following glucose transporter in the myocytes is under the influence of insulin?",
+    "explanation": "GLUT 4 is the glucose transporter in the myocytes under the influence of insulin. Glucose transport in our body mainly occurs through sodium-independent glucose transporters, which include GLUT transporters and to a small extent through sodium-dependent glucose transporters, which include SGLT-1 and SGLT-2. Insulin induces the movement of intracellular GLUT 4 molecules to the cell surface and\nthus increases glucose uptake. In type 2 diabetes mellitus, membrane GLUT 4 is reduced, leading to insulin resistance in muscle and fat cells.",
+    "marks": 4,
+    "negative": 1,
+    "type": "mcq",
+    "topic": "002 Glycolysis And Gluconeogenesis",
+    "options": [
+      "GLUT 1",
+      "GLUT 2",
+      "GLUT 3",
+      "GLUT 4"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "ANAT-001-000001-I",
+    "subject": "Anatomy",
+    "text": "What are the site and the timing of the origin of the primordial germ cells?",
+    "explanation": "Primordial germ cells originate in the epiblast, during the 2nd week of development. Primordial germ cells (PGCs) are also known as primitive sex cells. During the 2nd week of development, they originate in the epiblast at the caudal end of the primitive streak. They are the precursors of gametes in both genders. They pass through the primitive streak during gastrulation and reach the wall of the yolk sac. They migrate from the yolk sac in the 4th week and reach the developing gonads by the end of the 5th week.",
+    "marks": 4,
+    "negative": 1,
+    "references": "Gray's Anatomy: The Anatomical Basis of Clinical Practice, 41st Edition, Susan Standring PhD DSc, Pg 184\r\nInderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Pg 28\r\nTextbook of Clinical Embryology - 2nd Edition, Vishram Singh, Pg 268,269",
+    "topic": "001 Gametogenesis",
+    "type": "mcq",
+    "options": [
+      "Gonads, 4th week of embryonic development",
+      "Epiblast, 2nd week of embryonic development",
+      "Gonads, 2nd month of embryonic development",
+      "Yolk sac, 4th week of embryonic development"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "ANAT-001-000002-I",
+    "subject": "Anatomy",
+    "text": "What is the correct sequence of stem cell potency based on their ability to differentiate?",
+    "explanation": "The correct order of arrangement of stem cells, based on their potency to differentiate into different cells (highest to lowest) is :\r\nTotipotent > Pluripotent > Multipotent > Oligopotent > Unipotent.",
+    "marks": 4,
+    "negative": 1,
+    "references": "Inderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Pg 5",
+    "topic": "001 Gametogenesis",
+    "type": "mcq",
+    "options": [
+      "Pluripotent >Totipotent > Multipotent > Oligopotent > Unipotent",
+      "Totipotent > Pluripotent > Multipotent > Oligopotent > Unipotent",
+      "Totipotent > Pluripotent > Oligopotent > Multipotent >Unipotent",
+      "Pluripotent >Totipotent > Oligopotent > Multipotent > Unipotent"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "ANAT-001-000003-I",
+    "subject": "Anatomy",
+    "text": "What is a part of the embryo that exerts morphogenetic stimulus on its adjacent part called?",
+    "explanation": "Any part of the embryo that exerts a morphogenetic stimulus on adjacent parts is known as the organizer. First level is the primary organizer that induces the development of new tissues. This newly developed tissue can then induce another tissue in turn to become the secondary organizer. Therefore, there is a sequence or chain of organizers called primary, secondary, and tertiary organizers. \r\nExamples of the three levels of organizers: \r\n• Primary organizer: e.g., Blastopore induces differentiation of notochord \r\n• Secondary organizer: e.g., Notochord induces the development of the neural tube (that forms the brain and spinal cord) \r\n• Tertiary organizer. e.g., Neural tube induces segmentation of paraxial mesoderm into somites",
+    "marks": 4,
+    "negative": 1,
+    "references": "Inderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Pg 5",
+    "topic": "001 Gametogenesis",
+    "type": "mcq",
+    "options": [
+      "Differentiator",
+      "Organizer",
+      "Stem cell",
+      "Inducer"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "ANAT-001-000004-I",
+    "subject": "Anatomy",
+    "text": "During which phase of meiotic division are leptotene and zygotene stages seen?",
+    "explanation": "Leptotene and zygotene are stages of prophase 1 of meiosis I. Meiosis is a special type of cell division that reduces the chromosome number by half. It creates 4 daughter cells, each with haploid chromosomes distinct from the parent cell. Meiosis consists of two successive divisions called the first and second meiotic divisions. The various stages of meiosis are as follows: \r\nFirst meiotic division (meiosis I) \r\n• Prophase 1 (Leptotene, Zygotene, Pachytene, Diplotene, Diakinesis) \r\n• Metaphase 1 \r\n• Anaphase 1 \r\n• Telophase 1 \r\n\r\nSecond meiotic division (meiosis II) \r\n• Prophase 2 \r\n• Metaphase 2 \r\n• Anaphase 2 \r\n• Telophase 2",
+    "marks": 4,
+    "negative": 1,
+    "references": "Inderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Pg 19",
+    "topic": "001 Gametogenesis",
+    "type": "mcq",
+    "options": [
+      "Metaphase 1",
+      "Prophase 1",
+      "Metaphase 2",
+      "Prophase 2"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "ANAT-001-000005-I",
+    "subject": "Anatomy",
+    "text": "Which of the following represents the embryonic period of development?",
+    "explanation": "The embryonic period extends from the 3rd week of intrauterine life to the 8th week of intrauterine life. The prenatal period is divided into 3 different stages: \r\nStages of prenatal development Important events of each stage Pre-embryonic period (First 2 weeks) \r\n• Fertilization \r\n• Cleavage and blastocyst formation \r\n• Implantation \r\n• Formation of embryoblast and trophoblast \r\n• Differentiation of embryoblast to two-layered (bilaminar) germ disc \r\n• Differentiation of trophoblast into cytotrophoblast and syncytiotrophoblast \r\n\r\nEmbryonic period (3-8 weeks) \r\n• Trilaminar germ disc formation with the formation of 3 germ layers \r\n• Early organogenesis \r\n• Formation of extraembryonic supportive organs and membranes such as placenta, umbilical cord, amnion, and allantois \r\n\r\nFetal period (9 weeks to birth) \r\n• Growth and specialization of body structures",
+    "marks": 4,
+    "negative": 1,
+    "references": "Inderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Page nos 2 and 3",
+    "topic": "001 Gametogenesis",
+    "type": "mcq",
+    "options": [
+      "0-2 weeks",
+      "3-8 weeks",
+      "8-10 weeks",
+      "10-12 weeks"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "ANAT-001-000006-I",
+    "subject": "Anatomy",
+    "text": "During which stage of prenatal development does gastrulation occur?",
+    "explanation": "Gastrulation occurs during the embryonic period at the 3rd week of gestation. During the 3rd week of intra-uterine life, three definitive germ layers are formed, namely ectoderm, mesoderm, and endoderm. The three germ layers develop from the epiblast by a process of cell proliferation and migration known as gastrulation. This transforms the bilaminar germ disc into a trilaminar structure.",
+    "marks": 4,
+    "negative": 1,
+    "references": "Inderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Pg 2\r\nTextbook of Clinical Embryology - 2nd Edition, Vishram Singh, Page no. 1-2, 42",
+    "topic": "001 Gametogenesis",
+    "type": "mcq",
+    "options": [
+      "Embryonic period",
+      "Pre-embryonic period",
+      "Gametogenesis",
+      "Fetal period"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "ANAT-001-000007-I",
+    "subject": "Anatomy",
+    "text": "When does spermatogenesis begin?",
+    "explanation": "Spermatogenesis starts at puberty. The spermatozoa are produced in seminiferous tubules by a process known as spermatogenesis. In this process, spermatogonia are transformed into spermatozoa. Shortly before puberty, the sex cords acquire a lumen and become seminiferous tubules, and primordial germ cells differentiate into spermatogonial stem cells. These spermatogonial stem cells then give rise to type A spermatogonia. This marks the beginning of spermatogenesis.",
+    "marks": 4,
+    "negative": 1,
+    "references": "Inderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Pg 28",
+    "topic": "001 Gametogenesis",
+    "explanationImage": "images/ANAT-001-Q7E.jpg",
+    "type": "mcq",
+    "options": [
+      "Fetal life",
+      "Birth",
+      "Puberty",
+      "After 18 years"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "ANAT-001-000008-I",
+    "subject": "Anatomy",
+    "text": "Which of the following cells remain dormant in the testis until puberty?",
+    "explanation": "Primordial germ cells (PGCs) remain dormant in the testis until puberty. \r\nAt puberty, PGCs differentiate into spermatogonial stem cells. These spermatogonial stem cells then give rise to type A spermatogonia. This marks the beginning of spermatogenesis.",
+    "marks": 4,
+    "negative": 1,
+    "references": "Textbook of Clinical Embryology - 2nd Edition, Vishram Singh, Pg 26\r\nInderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Pg 28",
+    "topic": "001 Gametogenesis",
+    "type": "mcq",
+    "options": [
+      "Primordial germ cells",
+      "Primary spermatocytes",
+      "Secondary spermatocytes",
+      "Spermatids"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "ANAT-001-000009-I",
+    "subject": "Anatomy",
+    "text": "Which of the following cells have haploid number of chromosomes?",
+    "explanation": "Secondary spermatocytes have haploid number of chromosomes. \r\nDuring the process of spermatogenesis, each primary spermatocyte gives rise to 4 sperm cells (in contrast, each primary oocyte gives rise to only 1 ovum). The haploid cells formed during this process are secondary spermatocytes, spermatids, and spermatozoa. The flowchart below shows the steps of spermatogenesis:",
+    "marks": 4,
+    "negative": 1,
+    "references": "Inderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Page no 29\r\nGanong's Review Of Medical Physiology, 26th Edition, Kim E. Barrett, Susan M. Barman, Heddwen L. Brooks,\r\nJason Yuan., Page no 412",
+    "topic": "001 Gametogenesis",
+    "explanationImage": "images/ANAT-001-Q7E.jpg",
+    "type": "mcq",
+    "options": [
+      "Type A spermatogonia",
+      "Type B spermatogonia",
+      "Primary spermatocyte",
+      "Secondary spermatocyte"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "ANAT-001-000010-I",
+    "subject": "Anatomy",
+    "text": "Which stage of spermatogenesis is characterized by an independent assortment of maternal and paternal chromosomes?",
+    "explanation": "Independent assortment is the random distribution of chromosomes. It takes place during meiosis I where there is division from primary spermatocyte to secondary spermatocyte.\r\nThe law of independent assortment states that alleles for separate traits are passed independently of one another into the gametes. \r\nDuring the first meiotic division, paternal and maternal chromosomes are distributed between the daughter cells entirely at random. This prevents all chromosomes from the same source (mother or father) from ending up in the same gamete. After meiosis, each haploid daughter cell contains a mixture of genes from the mother and father.",
+    "marks": 4,
+    "negative": 1,
+    "references": "Inderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Pg 21, 28",
+    "topic": "001 Gametogenesis",
+    "type": "mcq",
+    "options": [
+      "Spermatogonia to primary spermatocyte",
+      "Primary spermatocyte to secondary spermatocyte",
+      "Secondary spermatocyte to spermatid",
+      "Spermatid to spermatozoa"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "ANAT-001-000011-I",
+    "subject": "Anatomy",
+    "text": "Which of the following transformations is seen in spermiogenesis?",
+    "explanation": "Spermiogenesis or spermateleosis is the process of maturation of spermatids to spermatozoa. It is the final stage of spermatogenesis. \r\nThe major events occurring during spermiogenesis include: \r\n• Nuclear morphogenesis and condensation \r\n• Formation of tail \r\n• Formation of acrosome \r\n• Rearrangement of organelles (mitochondria, centrioles, etc.) \r\n• Shedding off excess cytoplasm",
+    "marks": 4,
+    "negative": 1,
+    "references": "Inderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Pg 29",
+    "topic": "001 Gametogenesis",
+    "type": "mcq",
+    "options": [
+      "Primordial germ cells to spermatogonia",
+      "Spermatogonia to primary spermatocytes",
+      "Primary spermatocytes to secondary spermatocytes",
+      "Spermatids to spermatozoa"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "ANAT-001-000012-I",
+    "subject": "Anatomy",
+    "text": "Spermatogenesis is completed in approximately how many days?",
+    "explanation": "Spermatogenesis is completed in approximately 74 days. Spermatogenesis covers the entire process of sperm formation from spermatogonia into spermatozoa. \r\nSpermiogenesis covers the process of transformation from spermatid into spermatozoa.",
+    "marks": 4,
+    "negative": 1,
+    "references": "Ganong's Review Of Medical Physiology, 26th Edition, Kim E. Barrett, Susan M. Barman, Heddwen L. Brooks,\r\nJason Yuan., Pg 412\r\nInderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Pg 29",
+    "topic": "001 Gametogenesis",
+    "type": "mcq",
+    "options": [
+      "54",
+      "94",
+      "24",
+      "74"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "ANAT-001-000013-I",
+    "subject": "Anatomy",
+    "text": "Which organelle gives rise to the acrosomal cap of the sperm?",
+    "explanation": "The acrosomal cap of the sperm is derived from the Golgi apparatus. \r\nParts of the sperm and their derivatives: \r\nCell organelle Part of the sperm Nucleus Head of sperm Golgi apparatus Acrosomal cap Mitochondria Spiral sheath around the middle piece Centrosome Proximal centriole: spherical structure in sperm neck Distal centriole: the distal end of the middle piece (annulus) Cytoplasm Shed as residual bodies of Regaud Cell membrane Covering of spermatozoa The image given below shows the acrosome reaction.",
+    "marks": 4,
+    "negative": 1,
+    "references": "Inderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Page 29",
+    "topic": "001 Gametogenesis",
+    "explanationImage": "images/ANAT-001-Q13E.jpg",
+    "type": "mcq",
+    "options": [
+      "Nucleus",
+      "Golgi apparatus",
+      "Centrosome",
+      "Mitochondria"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "ANAT-001-000014-I",
+    "subject": "Anatomy",
+    "text": "Spermatozoa attain motility in __________",
+    "explanation": "Spermatozoa attain full motility during their passage through the epididymis. \r\nInitially, spermatozoa are only slightly motile, but they obtain full progressive motility in the epididymis. This involves the activation of a unique set of cation channel proteins from the CatSper family located in the principal piece of the sperm tail.",
+    "marks": 4,
+    "negative": 1,
+    "references": "Textbook of Clinical Embryology - 2nd Edition, Vishram Singh, Pg 26-29\r\nGanong's Review Of Medical Physiology, 26th Edition, Kim E. Barrett, Susan M. Barman, Heddwen L. Brooks,\r\nJason Yuan., Pg 414",
+    "topic": "001 Gametogenesis",
+    "type": "mcq",
+    "options": [
+      "Seminiferous tubules",
+      "Vas deferens",
+      "Epididymis",
+      "Ejaculatory duct"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "ANAT-001-000015-I",
+    "subject": "Anatomy",
+    "text": "You reassured the parents after you noted cryptorchidism in a premature baby. Which of the following cells are responsible for secreting the hormone responsible for its normal descent?",
+    "explanation": "Testosterone is involved in testicular descent. They are secreted by the Leydig cells. Leydig cells are large polyhedral cells present in the connective tissue between the seminiferous tubules. Testosterone is synthesized from cholesterol in Leydig cells. The secretion of testosterone from Leydig cells is under the control of the luteinizing hormone (LH).",
+    "marks": 4,
+    "negative": 1,
+    "references": "Inderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Pg 25\r\nGanong's Review Of Medical physiology, 26th Edition, Kim E. Barrett, Susan M. Barman, Heddwen L. Brooks,\r\nJason Yuan., Pg 421",
+    "topic": "001 Gametogenesis",
+    "type": "mcq",
+    "options": [
+      "Primordial germ cells",
+      "Spermatogenic cells",
+      "Sertoli cells",
+      "Leydig cells"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "ANAT-001-000016-I",
+    "subject": "Anatomy",
+    "text": "Which of the following cells remain dormant in the ovary until puberty?",
+    "explanation": "Primary oocytes remain dormant in the ovary until puberty. They are arrested in prophase (dictyotene/diplotene) of meiosis I and surrounded by flat epithelial cells (primordial follicles) in the ovary before puberty. Steps of oogenesis before puberty are shown in the image below:",
+    "marks": 4,
+    "negative": 1,
+    "references": "Inderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Pg 31, 32\r\nGanong's Review Of Medical Physiology, 26th Edition, Kim E. Barrett, Susan M. Barman, Heddwen L. Brooks,\r\nJason Yuan., Pg 394",
+    "topic": "001 Gametogenesis",
+    "explanationImage": "images/ANAT-001-Q16E.jpg",
+    "type": "mcq",
+    "options": [
+      "Primordial germ cell",
+      "Primary oocyte",
+      "Secondary oocyte",
+      "First polar body"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "ANAT-001-000017-I",
+    "subject": "Anatomy",
+    "text": "A 30-year-old woman came to the obstetrician for in-vitro fertilization. FSH analogs were injected to induce follicular growth and hCG was injected to induce final oocyte maturation. The oocyte was then retrieved transvaginally. The oocyte thus retrieved■ is arrested at which of the following stages?",
+    "explanation": "The oocyte retrieved after final maturation is the secondary oocyte that is arrested in metaphase of meiosis II. \r\nSteps of oogenesis after puberty are shown in the image below: If there is no fertilization, the secondary oocyte fails to complete the second meiotic division and degenerates about 24 hours after ovulation. In in-vitro fertilization, initially, FSH analogs are administered to induce follicular growth. At this stage, the oocyte is arrested in the prophase stage of meiosis I. The final maturation of the oocyte is induced by the administration of hCG. This causes the oocyte to resume the meiotic division, complete meiosis I, and enter meiosis II. However, the oocyte is arrested in the metaphase of meiosis II until fertilization.",
+    "marks": 4,
+    "negative": 1,
+    "references": "Inderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Pg 32\r\nGanong's Review Of Medical physiology, 26th Edition, Kim E. Barrett, Susan M. Barman, Heddwen L. Brooks,\r\nJason Yuan., Pg 394",
+    "topic": "001 Gametogenesis",
+    "explanationImage": "images/ANAT-001-Q16E.jpg",
+    "type": "mcq",
+    "options": [
+      "Prophase of meiosis I",
+      "Prophase of meiosis II",
+      "Metaphase of meiosis I",
+      "Metaphase of meiosis II"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "ANAT-001-000018-I",
+    "subject": "Anatomy",
+    "text": "If the ovum is not fertilized, the corpus luteum may persist for about ______",
+    "explanation": "If the ovum is not fertilized, the corpus luteum persists for about 14 days i.e., 2 weeks. \r\nThe fate of the corpus luteum depends on the fertilization of the ovum: \r\n•• No fertilization: \r\n• Corpus luteum of menstruation remains small and secretes progesterone. \r\n• This progesterone prepares the uterine endometrium to enter the progestational or secretory phase. \r\n• It persists for about 14 days. \r\n• It reaches maximum size by about 9 days after ovulation and starts to shrink 3–4 days before the next menses. \r\n• It undergoes fibrosis to become a white scar tissue called corpus albicans. \r\n•• Ovum fertilized: \r\n• Corpus luteum of pregnancy is formed. \r\n• Regression of the corpus luteum is prevented by hCG secreted by the syncytiotrophoblast of the developing embryo. \r\n• It continues to grow and secrete progesterone that helps maintain the pregnancy. \r\n• It persists for 3-4 months until the placenta takes over.",
+    "marks": 4,
+    "negative": 1,
+    "references": "Inderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Pg 38",
+    "topic": "001 Gametogenesis",
+    "type": "mcq",
+    "options": [
+      "48 hours",
+      "1 week",
+      "2 weeks",
+      "3 weeks"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "ANAT-001-000019-I",
+    "subject": "Anatomy",
+    "text": "Meiosis occurs in:",
+    "explanation": "Meiosis occurs in the adult ovary. \r\nMeiosis takes place only in germ cells and results in the formation of haploid gametes. Meiosis requires two cell divisions, meiosis I and meiosis II, to reduce the number of chromosomes to the haploid number of 23. \r\nOption C: Spermatogenesis begins at puberty. Primordial germ cells (PGCs) remain dormant in the testis until puberty. At puberty, PGCs differentiate into spermatogonial stem cells. These spermatogonial stem cells then give rise to spermatogonia which marks the beginning of spermatogenesis. \r\nOptions A and D: These are somatic cells that only undergo mitosis and not meiosis.",
+    "marks": 4,
+    "negative": 1,
+    "references": "Larsen' Human Embryology - 6th Edition, Gary Schoenwolf, Bleyl, Brauer, Francis-West, PG-61",
+    "topic": "001 Gametogenesis",
+    "type": "mcq",
+    "options": [
+      "Adrenal",
+      "Adult ovary",
+      "Prepubertal testis",
+      "Hypothalamus"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "ANAT-002-000001-I",
+    "subject": "Anatomy",
+    "text": "Which of the following is included in pre-embryonic phase of development?",
+    "explanation": "The pre-embryonic phase includes the first 2 weeks of intrauterine development, from fertilization to the formation of bilaminar germ disc. \r\nMajor morphogenetic events that occur in the pre-embryonic phase include: \r\n• Fertilization \r\n• Cleavage \r\n• Transportation of cleaving zygote \r\n• Formation of blastocyst \r\n• Implantation \r\n• Specialization of primordial embryonic tissue \r\n• Differentiation of embryoblast to bilaminar germ disc \r\n• Differentiation of trophoblast to cytotrophoblast and syncytiotrophoblast",
+    "marks": 4,
+    "negative": 1,
+    "references": "Inderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Pg 2",
+    "topic": "002 Pre-Embryonic Phase Of Development",
+    "type": "mcq",
+    "options": [
+      "First 2 weeks of intrauterine development",
+      "First 3 weeks of intrauterine development",
+      "First 4 weeks of intrauterine development",
+      "First 8 weeks of intrauterine development"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "ANAT-002-000002-I",
+    "subject": "Anatomy",
+    "text": "Where does fertilization of the ovum commonly occur?",
+    "explanation": "Fertilization of the ovum commonly occurs in the ampulla of the uterine tube. The ovulated egg enters the infundibulum of the uterine tube and then passes into the ampulla. The sperms released into the female genital tract swim to the ampulla and fertilize the ovum there. \r\nTimeline of fertilization: \r\n• The ovum released after ovulation is capable of being fertilized for 12-24 hours. \r\n• The spermatozoa after ejaculation are capable of fertilization for 24-48 hours. \r\n• Fertilization occurs within 1–2 days after ovulation.",
+    "marks": 4,
+    "negative": 1,
+    "references": "Inderbir Singh's Human Embryology - 12th Edition, V Subhadra Devi , Pg 48-52",
+    "topic": "002 Pre-Embryonic Phase Of Development",
+    "type": "mcq",
+    "options": [
+      "Fimbriae",
+      "Ampulla",
+      "Infundibulum",
+      "Isthmus"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "ANAT-002-000003-I",
+    "subject": "Anatomy",
+    "text": "What is the final step of maturation of spermatozoon before fertilization known as?",
+    "explanation": "The final step of maturation of spermatozoon before fertilization is known as capacitation. Capacitation involves a period of conditioning of the sperm in the female reproductive tract, predominantly in the uterine tube. It provides the sperms with the ability to penetrate the outer layer of the ovum. Chemical changes in the tail provide them with greater mobility. It lasts approximately 7 hours.",
+    "marks": 4,
+    "negative": 1,
+    "references": "Inderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Pg 48",
+    "topic": "002 Pre-Embryonic Phase Of Development",
+    "type": "mcq",
+    "options": [
+      "Spermiogenesis",
+      "Capacitation",
+      "Acrosome reaction",
+      "Cortical reaction"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "ANAT-002-000004-I",
+    "subject": "Anatomy",
+    "text": "During fertilization, all of the following barriers in the ovum are penetrated by the sperm except:",
+    "explanation": "The sperm does not penetrate the nuclear membrane of the oocyte. The three barriers for sperm penetration in the ovum include: \r\n• Corona radiata \r\n• Zona pellucida \r\n• Oocyte cell membrane \r\nAfter the fusion of the sperm and oocyte cell membranes, the nucleus of the ovum is converted to the female pronucleus. The nucleus of the sperm becomes the male pronucleus.",
+    "marks": 4,
+    "negative": 1,
+    "references": "Ganong's Review Of Medical Physiology, 26th Edition, Kim E. Barrett, Susan M. Barman, Heddwen L. Brooks,\r\nJason Yuan., Pg 404",
+    "topic": "002 Pre-Embryonic Phase Of Development",
+    "explanationImage": "images/ANAT-002-Q4E.jpg",
+    "type": "mcq",
+    "options": [
+      "Corona radiata",
+      "Zona pellucida",
+      "Oocyte cell membrane",
+      "Nuclear membrane"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "ANAT-002-000005-I",
+    "subject": "Anatomy",
+    "text": "Which of the following is not an acrosomal enzyme?",
+    "explanation": "Alkaline phosphatase is not an acrosomal enzyme. \r\nThe three main acrosomal enzymes include: \r\n• Acrosin \r\n• Hyaluronidase \r\n• Acid phosphatase \r\nThe sperm binds to the zona pellucida through the glycoprotein ligands ZP3 and ZP2 (zona proteins). This binding causes the release of the acrosomal enzymes that allow the sperm to penetrate the zona pellucida. This is called acrosomal reaction.",
+    "marks": 4,
+    "negative": 1,
+    "references": "Inderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Pg 49, 50\r\nGanong's Review Of Medical Physiology, 26th Edition, Kim E. Barrett, Susan M. Barman, Heddwen L. Brooks,\r\nJason Yuan., Pg 405",
+    "topic": "002 Pre-Embryonic Phase Of Development",
+    "explanationImage": "images/ANAT-002-Q5E.jpg",
+    "type": "mcq",
+    "options": [
+      "Acrosin",
+      "Hyaluronidase",
+      "Acid phosphatase",
+      "Alkaline phosphatase"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "ANAT-002-000006-I",
+    "subject": "Anatomy",
+    "text": "Which of the following events is referred to as zona reaction?",
+    "explanation": "Alteration of the properties of the zona pellucida to prevent the entry of other sperms is zona reaction. \r\nAfter penetrating the zona, the sperm comes in contact with the oolemma (the plasma membrane of the oocyte). \r\nThis contact results in weak membrane depolarization and a calcium wave. \r\nThe calcium wave triggers the release of lysosomal enzymes from the cortical granules lining the oolemma (cortical reaction). These enzymes hydrolyze the ZP3 receptor on the zona pellucida. Digestion of ZP3 and alteration of zona pellucida (zona reaction) prevents other sperms from binding, thus creating a block to polyspermy.",
+    "marks": 4,
+    "negative": 1,
+    "references": "Inderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Pg 50\r\nGray's Anatomy: The Anatomical Basis of Clinical Practice, 41st Edition, Susan Standring PhD DSc, Pg 163",
+    "topic": "002 Pre-Embryonic Phase Of Development",
+    "type": "mcq",
+    "options": [
+      "Penetration of sperm through the zona pellucida",
+      "Complete dissolution of the zona pellucida",
+      "Alteration of zona pellucida to prevent polyspermy",
+      "Binding of sperm to zona proteins"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "ANAT-002-000007-I",
+    "subject": "Anatomy",
+    "text": "A 26-year-old man presented with sudden onset of visual loss. After evaluation, he was diagnosed with a mitochondrial disorder called Leber's hereditary optic neuropathy. What is the origin of the affected DNA in this condition?",
+    "explanation": "Mitochondrial disorders (e.g., Leber's hereditary optic neuropathy) have mutations in the mitochondrial DNA. Mitochondria and mitochondrial DNA of all human adult cells are of maternal origin. During fertilization, the sperm's midpiece (with mitochondria) and tail are discarded. The sperm nucleus becomes the male pronucleus. Therefore, only the mitochondria present within the secondary oocyte (maternal mitochondria) remain in the fertilized zygote. Mitochondria, mitochondrial genetic variations, and mutations are passed only through the female line.",
+    "marks": 4,
+    "negative": 1,
+    "references": "Inderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Pg 51\r\nGray's Anatomy: The Anatomical Basis of Clinical Practice, 41st Edition, Susan Standring PhD DSc, Pg 10",
+    "topic": "002 Pre-Embryonic Phase Of Development",
+    "type": "mcq",
+    "options": [
+      "Paternal only",
+      "Maternal only",
+      "50% paternal and 50% maternal",
+      "Either paternal or maternal"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "ANAT-002-000008-I",
+    "subject": "Anatomy",
+    "text": "What is the normal site of implantation of the blastocyst?",
+    "explanation": "The blastocyst normally implants in the functional layer of the uterine endometrium. In the secretory phase, three layers can be recognized in the endometrium: stratum compactum, stratum spongiosum, and stratum basale. The first two layers (stratum compactum and spongiosum) are together known as stratum functionale or the functional layer. If implantation does not occur, the functional layer is shed off during menstruation. If implantation occurs, the functional layer is retained as the decidua. \r\nTimeline of implantation: \r\n• 3-4 days after fertilization: The morula (12-16 cells) enters the uterus. \r\n• 4th day after fertilization: The advanced morula reaches the uterine lumen. \r\n• 4-5 days after fertilization: The early blastocyst stage is seen. \r\n• 6-7 days after fertilization: The blastocyst implants in the uterus. Implantation corresponds to 20-22 days of the menstrual cycle.",
+    "marks": 4,
+    "negative": 1,
+    "references": "Inderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Pg 76\r\nGray's Anatomy: The Anatomical Basis of Clinical Practice, 41st Edition, Susan Standring PhD DSc, Pg 1306",
+    "topic": "002 Pre-Embryonic Phase Of Development",
+    "explanationImage": "images/ANAT-002-Q8E.jpg",
+    "type": "mcq",
+    "options": [
+      "Endometrium and myometrium",
+      "Functional layer of the endometrium",
+      "Basal layer of the endometrium",
+      "Myometrium"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "ANAT-002-000009-I",
+    "subject": "Anatomy",
+    "text": "What does the inner cell mass form during blastocyst formation?",
+    "explanation": "The inner cell mass gives rise to the embryoblast, which forms the embryo proper. Around the 4th-5th day of development, the morula becomes the blastocyst. Fluid passes into the morula from the uterine cavity and converts it to a blastocyst with a fluid-filled cavity called blastocoele. This fluid partially separates the cells of the inner cell mass from the outer cell mass. \r\nCell masses in the blastocyst: \r\n• The outer cell mass is called the trophoblast and forms a major part of the placenta \r\n• The inner cell mass is called the embryoblast and forms the embryo proper",
+    "marks": 4,
+    "negative": 1,
+    "references": "Inderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Pg 75",
+    "topic": "002 Pre-Embryonic Phase Of Development",
+    "explanationImage": "images/ANAT-002-Q9E.jpg\"",
+    "type": "mcq",
+    "options": [
+      "Cytotrophoblast",
+      "Syncytiotrophoblast",
+      "Embryoblast",
+      "Blastocele"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "ANAT-002-000010-I",
+    "subject": "Anatomy",
+    "text": "Arrange the following events of pre-embryonic development in order, from the earlier stage to the later stage.",
+    "explanation": "The correct order of the listed events of the pre-embryonic period is cleavage - compaction - cavitation - implantation. \r\nEvents of the pre-embryonic phase of development: \r\n• Fertilization \r\n• Cleavage - Formation of blastomeres; the cells are loosely arranged until the 8-cell stage. \r\n• Compaction - After 3 cleavages, the blastomeres are held together by tight junctions. \r\n• Differentiation - The compacted 8-cell stage divides to form a 16-cell morula. \r\n• Cavitation - Formation of the blastocyst with inner cell and outer cell mass. \r\n• Hatching of the blastocyst - Release of the blastocyst from the zona pellucida. \r\n• Implantation - Attachment of developing embryo to the uterine endometrium. \r\n• Cell mass differentiation - Differentiation of the embryoblast (inner cell mass) into columnar epiblast cells and cuboidal hypoblast cells. \r\n• Bilaminar disc formation - Formation of the bilaminar disc suspended by the connecting stalk. It has two layers (epiblast and hypoblast) and two cavities (amniotic and yolk sac).",
+    "marks": 4,
+    "negative": 1,
+    "references": "Inderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Pg 52",
+    "topic": "002 Pre-Embryonic Phase Of Development",
+    "type": "mcq",
+    "options": [
+      "2 – 4 – 1 – 3",
+      "3 – 1 – 2 – 4",
+      "4 – 2 – 3 – 1",
+      "4 – 2 – 1 – 3"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "ANAT-002-000011-I",
+    "subject": "Anatomy",
+    "text": "The bilaminar embryonic disc is made up of which of the following cells?",
+    "explanation": "The bilaminar embryonic disc is made up of the epiblast layer (columnar cells) near the amniotic cavity and the hypoblast layer (cuboidal cells) near the blastocyst cavity. On the 8th day of development, the embryoblast differentiates into two layers, hypoblast and epiblast, to form the bilaminar disc. Around the same time, a small amniotic cavity appears within the epiblast. At this stage, the two layers of embryoblast are arranged as follows: • One layer of high columnar cells known as the epiblast layer, adjacent to the amniotic cavity • One layer of small cuboidal cells known as the hypoblast layer, adjacent to the blastocyst cavity The image given below shows the embryonic disc with the epiblast and hypoblast layers.",
+    "marks": 4,
+    "negative": 1,
+    "references": "Inderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Page No. 55",
+    "topic": "002 Pre-Embryonic Phase Of Development",
+    "explanationImage": "images/ANAT-002-Q11E.jpg\"",
+    "type": "mcq",
+    "options": [
+      "Cuboidal cells of hypoblast layer near amniotic cavity",
+      "Cuboidal cells of epiblast layer near blastocyst cavity",
+      "Columnar cells of epiblast layer near amniotic cavity",
+      "Columnar cells of hypoblast layer near blastocyst cavity"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "ANAT-002-000012-I",
+    "subject": "Anatomy",
+    "text": "Where does the Heuser’s membrane develop from?",
+    "explanation": "Heuser's membrane or exocoelomic membrane develops from flattened cells derived from the hypoblast. \r\nOn day 9-10 of pre-embryonic development, flattened cells from the hypoblast begin to migrate to the abembryonic pole. They form a layer of cells just beneath the cytotrophoblast. This layer is called the Heuser's membrane. Once the blastocyst cavity is fully lined with Heuser's membrane, it is called the exocoelomic cavity. The image below shows the formation of Heusner's membrane.",
+    "marks": 4,
+    "negative": 1,
+    "references": "Inderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Page no 55",
+    "topic": "002 Pre-Embryonic Phase Of Development",
+    "explanationImage": "images/ANAT-002-Q12E.jpg\"",
+    "type": "mcq",
+    "options": [
+      "Columnar cells derived from epiblast",
+      "Flattened cells derived from epiblast",
+      "Columnar cells derived from hypoblast",
+      "Flattened cells derived from hypoblast"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "ANAT-002-000013-I",
+    "subject": "Anatomy",
+    "text": "What is the part of extraembryonic mesoderm lining the amniotic cavity called?",
+    "explanation": "The parietal or somatopleuric extraembryonic mesoderm lines the amniotic cavity. The extraembryonic mesoderm is derived from yolk sac cells. Large cavities develop in extraembryonic mesoderm, and they join to form the extraembryonic cavity (or chorionic cavity). Formation of the extraembryonic cavity splits the extraembryonic mesoderm into two layers: \r\n• Parietal or somatopleuric extraembryonic mesoderm lining the trophoblast and outside of the amniotic cavity \r\n• Visceral or splanchnopleuric extraembryonic mesoderm lining the outside of yolk sac The image given below shows the extraembryonic mesoderm.",
+    "marks": 4,
+    "negative": 1,
+    "references": "Inderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Pg 55",
+    "topic": "002 Pre-Embryonic Phase Of Development",
+    "explanationImage": "images/ANAT-002-Q13E.jpg\"",
+    "type": "mcq",
+    "options": [
+      "Parietal or splanchnopleuric extraembryonic mesoderm",
+      "Visceral or splanchnopleuric extraembryonic mesoderm",
+      "Parietal or somatopleuric extraembryonic mesoderm",
+      "Visceral or somatopleuric extraembryonic mesoderm"
+    ],
+    "correctIndex": 2
+  }
+];

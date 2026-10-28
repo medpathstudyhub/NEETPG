@@ -9,7 +9,7 @@ const SUBJECT_EMOJIS={
   "Forensic Medicine":"🔍",
   "Community Medicine":"🛡️",
   "General Medicine":"🩺",
-  "General Surgery":"🩻",
+  "General Surgery":"🔪",
   "Obstetrics & Gynaecology":"🤰",
   "Paediatrics":"🧸",
   "Ophthalmology":"👁️",

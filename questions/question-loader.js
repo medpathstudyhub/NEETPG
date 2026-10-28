@@ -1,0 +1,2 @@
+/* Load all questions/<subject>.js files before this file. */
+(function(){var p=window.MEDPATH_QUESTION_PARTS||{};var order=["anatomy","physiology","biochemistry","microbiology","pathology","pharmacology","forensic-medicine","community-medicine","ophthalmology","ent","general-medicine","general-surgery","obstetrics-gynaecology","paediatrics","anaesthesiology","dermatology","psychiatry","orthopaedics","radiology"];window.QUESTION_BANK=order.reduce(function(a,k){return a.concat(Array.isArray(p[k])?p[k]:[])},[]);})();

@@ -126,7 +126,36 @@ The student entry page (`index2.html`) includes four modes: Subject-wise practic
 
 The admin page includes a Subject-wise Topic Manager. Select a subject, paste one topic per line, and click Add topics to catalogue. Download `topics.js` and publish it beside `questions.js` to make those topics available on GitHub Pages, including topics with zero questions. Questions can be added later and tagged with a catalogue topic. When publishing, upload both files together.
 
+## Zero-cost admin improvements (2026-10-24)
 
-## Subject emoji UI update
+This update intentionally skips admin authentication, as requested. The Admin page remains a public static page on GitHub Pages; do not consider it protected against determined visitors. Student pages remain public and free.
 
-`subject-config.js` provides display-only subject emoji labels for the homepage cards, topic directory heading, quiz subject selector, and admin subject selectors. Canonical subject values, question-bank data, topic matching, IDs, timers, and scoring are unchanged. Include `subject-config.js` when publishing the updated project.
+### Formula entry
+The Admin page includes a floating **Insert formula** tool powered by MathLive. Focus the question, option, or explanation text field first, open the formula editor, compose the equation, and insert it. The formula is stored using LaTeX delimiters and rendered on the student practice page using MathJax. These libraries load from public CDNs, so an internet connection is required. Test chemical notation and complex layouts before bulk use.
+
+### PDF review workflow
+1. Select the subject and a selectable-text PDF in **PDF Import**.
+2. Extract questions and review every item; extraction is a draft, not a verified answer key.
+3. Export the review to Excel, correct question text/options/answer/explanation/topic and set `Approved` to `Yes` only for reviewed questions.
+4. Use **Import edited review Excel** to bring the corrections and approval flags back into the Admin review list.
+5. Import approved questions into the working bank, then download `questions.js` and publish it to GitHub.
+
+Scanned/image PDFs are not OCR'd by this zero-cost version. Image-dependent questions are flagged for human review; diagrams are not automatically extracted into image files.
+
+### IDs
+Manual questions use `SUBJECT-MAN-000001`; Excel/CSV and approved PDF imports use `SUBJECT-IMP-000001`. The sequence is calculated per subject and source using the highest matching existing sequence, with a duplicate-ID check. Existing question IDs are not changed.
+
+### Image attribution
+For question and explanation images, record the source URL, creator, licence/permission, credit text, and whether attribution is required. Student pages display a compact credit only when credit text is supplied or attribution is marked required. Do not assume an image is reusable merely because it is online; verify its licence/permission before publishing. Static GitHub Pages cannot automatically save uploaded images into the repository, so upload image files to `images/` manually and set their relative paths.
+
+### Publish safely
+Back up the project before replacing files. Test formula rendering, a PDF review workbook round-trip, subject-specific IDs, and attribution display on a few sample questions before publishing. Changes remain in the browser until you export the updated files; `questions.js` is the published question bank.
+
+
+## Admin login and logout (Option A)
+Open `login.html` to sign in. Change `LOGIN_USERNAME` and `LOGIN_PASSWORD` in `passlog.js`. The Admin page now includes a **Log out** button; it clears the current tab session and returns to `login.html`. This client-side login is only a convenience screen: credentials in public JavaScript can be inspected and direct-page checks can be bypassed. Do not use it to protect sensitive data.
+
+
+## Subject-wise question bank architecture
+
+The live student/admin pages load the 19 files under `questions/` followed by `question-loader.js`. The loader combines them into `window.QUESTION_BANK` so existing Full Test and practice-mode code can keep using the same shared array. Use Admin → Question Bank → “Download subject-wise question files (.zip)” after edits, then extract the ZIP and publish its `questions/` folder and `question-loader.js`. Keep the script tags in all HTML pages unchanged. Do not replace the live loader with `questions.js.backup`.

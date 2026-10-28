@@ -1,0 +1,17 @@
+MEDPATH STUDY HUB — SIMPLE LOGIN (OPTION A)
+
+Files added:
+- login.html: administrator login page
+- passlog.js: username/password check and tab-session redirect
+
+SETUP
+1. Open passlog.js in a text editor.
+2. Change LOGIN_USERNAME and LOGIN_PASSWORD to your preferred values.
+3. Upload login.html, passlog.js, and the updated admin.html to the same folder in your GitHub Pages repository.
+4. Open login.html to sign in. After successful login it opens admin.html.
+5. Direct visits to admin.html without a login in the current browser tab redirect to login.html.
+
+IMPORTANT SECURITY LIMITATION
+This is Option A only. Credentials are stored in public JavaScript and can be viewed by anyone who knows where to look. The sessionStorage check can also be bypassed by a technically capable visitor. Do not use this to protect sensitive data or rely on it as real security. GitHub Pages is static hosting; real authentication requires a trusted backend/authentication service.
+
+No existing student practice logic or question-bank files were intentionally changed by this login addition.

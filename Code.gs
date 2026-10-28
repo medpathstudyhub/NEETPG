@@ -8,7 +8,7 @@
  * and always sends the admin copy to the fixed address below (never a client-supplied admin).
  */
 
-const ADMIN_EMAIL = "medpathstudyhub@gmail.com";
+const ADMIN_EMAIL = "REPLACE_WITH_YOUR_ADMIN_EMAIL@example.com";
 const APP_NAME = "NEET PG-Style Mock Test";
 const MAX_PAYLOAD_CHARS = 180000;
 const COOLDOWN_SECONDS = 90;
