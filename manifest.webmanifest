@@ -1,0 +1,17 @@
+{
+  "id": "./index.html",
+  "name": "MEDPATH STUDY HUB",
+  "short_name": "MEDPATH",
+  "description": "MBBS learning, NEET PG and INI-CET practice hub.",
+  "start_url": "./index.html?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#123455",
+  "theme_color": "#123455",
+  "categories": ["education", "medical"],
+  "icons": [
+    {"src": "icons/medpath-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable"},
+    {"src": "icons/medpath-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+  ]
+}
