@@ -1,0 +1,17 @@
+MEDPATH STUDY HUB — INI-CET ADDITION (STAGED UPDATE)
+
+What changed:
+- Added Open INI-CET Study Hub button to the existing landing page (index.html).
+- Added index3.html, cloned from the existing CBT screen so the question layout, palette, navigation, images, controls and result review match the current exam screen.
+- Added app-ini.js as a separate INI-CET engine; existing index2.html and app.js are not modified.
+- INI-CET strict mock configuration: 200 questions, 4 sequential sections of 50, 45 minutes per section, 180 minutes total.
+- INI-CET strict question selection accepts questions tagged INI_CET or BOTH; older untagged questions are temporarily treated as BOTH for compatibility.
+- INI-CET objective MCQ/multiple-response scoring uses +1 and -1/3; unanswered = 0.
+
+Important limitations before public deployment:
+- This update does NOT yet add the Exam Tags worksheet/importer/editor controls in admin. Existing untagged questions are treated as BOTH temporarily.
+- It uses the existing question response formats and screen layout. The exact official INI-CET treatment of every question format should be checked against the applicable AIIMS prospectus before claiming official simulation.
+- A full strict test can only start when at least 200 eligible questions are available. The supplied ZIP has sample data, not a complete 200-question exam bank.
+- Existing NEET-PG files index2.html and app.js were retained unchanged.
+
+Deployment: publish the changed index.html and the new index3.html, app-ini.js, and this note. Keep all existing subject question files and assets in place.

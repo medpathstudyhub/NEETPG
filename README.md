@@ -159,3 +159,7 @@ Open `login.html` to sign in. Change `LOGIN_USERNAME` and `LOGIN_PASSWORD` in `p
 ## Subject-wise question bank architecture
 
 The live student/admin pages load the 19 files under `questions/` followed by `question-loader.js`. The loader combines them into `window.QUESTION_BANK` so existing Full Test and practice-mode code can keep using the same shared array. Use Admin → Question Bank → “Download subject-wise question files (.zip)” after edits, then extract the ZIP and publish its `questions/` folder and `question-loader.js`. Keep the script tags in all HTML pages unchanged. Do not replace the live loader with `questions.js.backup`.
+
+
+## Exam Tags (merged from staged V24)
+The admin page includes an Exam Tag Manager for NEET_PG, INI_CET, and BOTH. Untagged questions are marked UNREVIEWED and are excluded from exam-specific practice/full-test selection until reviewed. Use the manager to tag questions, then export and publish the updated question files. The NEET PG and INI-CET entry pages are retained separately (index2.html and index3.html).
