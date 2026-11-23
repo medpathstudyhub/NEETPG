@@ -1,0 +1,13 @@
+{
+  "packageId": "in.medpathstudyhub.app",
+  "host": "medpathstudyhub.github.io",
+  "startUrl": "/NEETPG/index.html",
+  "name": "MEDPATH STUDY HUB",
+  "launcherName": "MEDPATH",
+  "display": "standalone",
+  "themeColor": "#123455",
+  "navigationColor": "#123455",
+  "backgroundColor": "#123455",
+  "enableNotifications": false,
+  "fallbackType": "customtabs"
+}
