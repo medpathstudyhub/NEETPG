@@ -42,7 +42,8 @@ window.TOPIC_CATALOG = {
     "039 The Adrenals",
     "040 Calcium Homeostasis",
     "041 Male Reproductive Physiology",
-    "042 Female Reproductive Physiology"
+    "042 Female Reproductive Physiology",
+    "043 Exercise Physiology"
   ],
   "Biochemistry": [
     "001 Chemistry Of Carbohydrates, Amino Sugars And Mucopolysaccharides",
