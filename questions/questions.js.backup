@@ -589,74 +589,6 @@ window.QUESTION_BANK = [
     "correctIndex": 2
   },
   {
-    "id": "PHYS-MAN-000001",
-    "subject": "Physiology",
-    "text": "Homeostasis is called as dynamic equilibrium because __________",
-    "explanation": "Correct Answer: D. Body maintains an internal balance within fluctuating limits\nExplanation: Homeostasis is called dynamic equilibrium because the body maintains an internal balance within fluctuating limits. It describes the maintenance of nearly constant conditions in the internal environment despite changes in the outside world. A number of variables such as body temperature, blood sugar levels, blood pH, etc. are regulated within a range of values (homeostatic ranges) and not at fixed values. These variables are not given equal importance. There is a hierarchy of importance so that the constancy of certain variables may be altered markedly to maintain others within their normal range. For example, respiratory or metabolic compensation to maintain blood pH. The disruption of homeostasis either due to extreme environmental challenge or a breakdown of internal homeostatic mechanisms is termed as a disease.",
-    "marks": 4,
-    "negative": 1,
-    "type": "mcq",
-    "topic": "001 Homeostasis And Cellular Physiology",
-    "options": [
-      "All variables are given equal importance",
-      "Can achieve a constancy in extreme environmental challenge",
-      "The set-point for all homeostatic variables is always fixed",
-      "Body maintains an internal balance within fluctuating limits"
-    ],
-    "correctIndex": 3
-  },
-  {
-    "id": "BIOC-MAN-000001",
-    "subject": "Biochemistry",
-    "text": "Which of the following is an aldose sugar?",
-    "explanation": "Correct Answer: D. Erythrose\nErythrose is not a ketose sugar but an aldose sugar as it has an aldehyde group in it.\nErythrulose, ribulose, and fructose are ketose sugars as they have a ketone group in them.",
-    "marks": 4,
-    "negative": 1,
-    "type": "mcq",
-    "topic": "001 Chemistry Of Carbohydrates, Amino Sugars And Mucopolysaccharides",
-    "options": [
-      "Erythrulose",
-      "Ribulose",
-      "Fructose",
-      "Erythrose"
-    ],
-    "correctIndex": 3
-  },
-  {
-    "id": "BIOC-001-000002-M",
-    "subject": "Biochemistry",
-    "text": "Which of the following two monosaccharides are constituents of lactose?",
-    "explanation": "Lactose is a disaccharide that consists of galactose and glucose linked by a b-1,4-glycosidic linkage.",
-    "marks": 4,
-    "negative": 1,
-    "type": "mcq",
-    "topic": "001 Chemistry Of Carbohydrates, Amino Sugars And Mucopolysaccharides",
-    "options": [
-      "Glucose and Fructose",
-      "Glucose and Mannose",
-      "Glucose and Galactose",
-      "Glucose and Glucose"
-    ],
-    "correctIndex": 2
-  },
-  {
-    "id": "BIOC-002-000001-M",
-    "subject": "Biochemistry",
-    "text": "Which of the following glucose transporter in the myocytes is under the influence of insulin?",
-    "explanation": "GLUT 4 is the glucose transporter in the myocytes under the influence of insulin. Glucose transport in our body mainly occurs through sodium-independent glucose transporters, which include GLUT transporters and to a small extent through sodium-dependent glucose transporters, which include SGLT-1 and SGLT-2. Insulin induces the movement of intracellular GLUT 4 molecules to the cell surface and\nthus increases glucose uptake. In type 2 diabetes mellitus, membrane GLUT 4 is reduced, leading to insulin resistance in muscle and fat cells.",
-    "marks": 4,
-    "negative": 1,
-    "type": "mcq",
-    "topic": "002 Glycolysis And Gluconeogenesis",
-    "options": [
-      "GLUT 1",
-      "GLUT 2",
-      "GLUT 3",
-      "GLUT 4"
-    ],
-    "correctIndex": 3
-  },
-  {
     "id": "ANAT-003-000001-I",
     "subject": "Anatomy",
     "text": "Formation of which of the following indicates the beginning of gastrulation?",
@@ -956,5 +888,358 @@ window.QUESTION_BANK = [
       "Paraxial mesoderm"
     ],
     "correctIndex": 2
+  },
+  {
+    "id": "PHYS-MAN-000001",
+    "subject": "Physiology",
+    "text": "Homeostasis is called as dynamic equilibrium because __________",
+    "explanation": "Correct Answer: D. Body maintains an internal balance within fluctuating limits\nExplanation: Homeostasis is called dynamic equilibrium because the body maintains an internal balance within fluctuating limits. It describes the maintenance of nearly constant conditions in the internal environment despite changes in the outside world. A number of variables such as body temperature, blood sugar levels, blood pH, etc. are regulated within a range of values (homeostatic ranges) and not at fixed values. These variables are not given equal importance. There is a hierarchy of importance so that the constancy of certain variables may be altered markedly to maintain others within their normal range. For example, respiratory or metabolic compensation to maintain blood pH. The disruption of homeostasis either due to extreme environmental challenge or a breakdown of internal homeostatic mechanisms is termed as a disease.",
+    "marks": 4,
+    "negative": 1,
+    "type": "mcq",
+    "topic": "001 Homeostasis And Cellular Physiology",
+    "options": [
+      "All variables are given equal importance",
+      "Can achieve a constancy in extreme environmental challenge",
+      "The set-point for all homeostatic variables is always fixed",
+      "Body maintains an internal balance within fluctuating limits"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "BIOC-MAN-000001",
+    "subject": "Biochemistry",
+    "text": "Which of the following is an aldose sugar?",
+    "explanation": "Correct Answer: D. Erythrose\nErythrose is not a ketose sugar but an aldose sugar as it has an aldehyde group in it.\nErythrulose, ribulose, and fructose are ketose sugars as they have a ketone group in them.",
+    "marks": 4,
+    "negative": 1,
+    "type": "mcq",
+    "topic": "001 Chemistry Of Carbohydrates, Amino Sugars And Mucopolysaccharides",
+    "options": [
+      "Erythrulose",
+      "Ribulose",
+      "Fructose",
+      "Erythrose"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "BIOC-001-000002-M",
+    "subject": "Biochemistry",
+    "text": "Which of the following two monosaccharides are constituents of lactose?",
+    "explanation": "Lactose is a disaccharide that consists of galactose and glucose linked by a b-1,4-glycosidic linkage.",
+    "marks": 4,
+    "negative": 1,
+    "type": "mcq",
+    "topic": "001 Chemistry Of Carbohydrates, Amino Sugars And Mucopolysaccharides",
+    "options": [
+      "Glucose and Fructose",
+      "Glucose and Mannose",
+      "Glucose and Galactose",
+      "Glucose and Glucose"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "BIOC-002-000001-M",
+    "subject": "Biochemistry",
+    "text": "Which of the following glucose transporter in the myocytes is under the influence of insulin?",
+    "explanation": "GLUT 4 is the glucose transporter in the myocytes under the influence of insulin. Glucose transport in our body mainly occurs through sodium-independent glucose transporters, which include GLUT transporters and to a small extent through sodium-dependent glucose transporters, which include SGLT-1 and SGLT-2. Insulin induces the movement of intracellular GLUT 4 molecules to the cell surface and\nthus increases glucose uptake. In type 2 diabetes mellitus, membrane GLUT 4 is reduced, leading to insulin resistance in muscle and fat cells.",
+    "marks": 4,
+    "negative": 1,
+    "type": "mcq",
+    "topic": "002 Glycolysis And Gluconeogenesis",
+    "options": [
+      "GLUT 1",
+      "GLUT 2",
+      "GLUT 3",
+      "GLUT 4"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "ANAT-004-000001-I",
+    "subject": "Anatomy",
+    "text": "Identify the structures labeled in the image from 1 to 4.",
+    "explanation": "The structures labeled in the above image are (1) Decidua parietalis, (2) Decidua capsularis, (3) Decidua basalis, and (4) Uterine cavity. The decidua is the modified endometrium formed under the influence of progesterone and human chorionic gonadotropin (hCG) secreted by the cells of syncytiotrophoblast. After the implantation of the blastocyst, the decidua gets divided into 3 parts as follows: \r\n• Decidua capsularis: part surrounding the embryo and separating it from the uterine cavity \r\n• Decidua basalis: part deeper to the developing blastocyst that contributes to the maternal component of the placenta \r\n• Decidua parietalis: part lining the rest of the uterine cavity The image given below shows the parts of decidua.",
+    "marks": 4,
+    "negative": 1,
+    "examTagStatus": "unreviewed",
+    "references": "Gray's Anatomy: The Anatomical Basis of Clinical Practice, 41st Edition, Susan Standring PhD DSc, Page no 172\r\nInderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Page no 78",
+    "topic": "004 Placenta, Fetal Membranes And Twinning",
+    "image": "images/ANAT-004-Q1.jpg",
+    "explanationImage": "images/ANAT-004-Q1E.jpg",
+    "type": "mcq",
+    "options": [
+      "Decidua basalis, Decidua capsularis, Decidua parietalis, Amniotic cavity",
+      "Decidua parietalis, Decidua capsularis, Decidua basalis, Amniotic cavity",
+      "Decidua basalis, Decidua capsularis, Decidua parietalis, Uterine cavity",
+      "Decidua parietalis, Decidua capsularis, Decidua basalis, Uterine cavity"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "ANAT-004-000002-I",
+    "subject": "Anatomy",
+    "text": "Which of the following contributes to the maternal and fetal components of the structure shown below, respectively?",
+    "explanation": "The image shown is of a placenta. The maternal component of the placenta is from the decidua basalis and the fetal component is from the chorion frondosum. \r\nThe placenta is a fetomaternal organ containing tissues from two different sources as follows: \r\n• Maternal component - contributed by the decidua basalis. The decidua basalis is also referred to as the decidua serotina or decidual plate. \r\n• Fetal component - contributed by chorion frondosum. The chorionic villi adjacent to the decidua basalis undergo significant development and branching to form a bushy region called chorion frondosum.",
+    "marks": 4,
+    "negative": 1,
+    "examTagStatus": "unreviewed",
+    "references": "Gray's Anatomy: The Anatomical Basis of Clinical Practice, 41st Edition, Susan Standring PhD DSc, Pg 174\r\nInderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Pg 74",
+    "topic": "004 Placenta, Fetal Membranes And Twinning",
+    "image": "images/ANAT-004-Q2.jpg",
+    "explanationImage": "images/ANAT-004-Q2E.jpg",
+    "type": "mcq",
+    "options": [
+      "Decidua basalis and chorion laeve",
+      "Decidua capsularis and chorion frondosum",
+      "Decidua capsularis and chorion laeve",
+      "Decidua basalis and chorion frondosum"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "ANAT-004-000003-I",
+    "subject": "Anatomy",
+    "text": "Which of the following statements regarding chorionic villi is false?",
+    "explanation": "Secondary villi do not contain fetal capillaries. Fetal capillaries are present in tertiary villi. Chorionic villi pass through the following stages during development:",
+    "marks": 4,
+    "negative": 1,
+    "examTagStatus": "unreviewed",
+    "references": "Inderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Pg 81, 84",
+    "topic": "004 Placenta, Fetal Membranes And Twinning",
+    "explanationImage": "images/ANAT-004-Q3E.jpg",
+    "type": "mcq",
+    "options": [
+      "Primary villi contain cytotrophoblast and syncytiotrophoblast",
+      "Secondary villi contain extraembryonic mesoderm",
+      "Tertiary villi contain extraembryonic mesoderm",
+      "Secondary villi contain fetal capillaries"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "ANAT-004-000004-I",
+    "subject": "Anatomy",
+    "text": "Which of the following are components of the definitive chorion?",
+    "explanation": "The definitive chorion is an extraembryonic membrane composed of three components: \r\n• Extraembryonic somatic mesoderm \r\n• Cytotrophoblast \r\n• Syncytiotrophoblast It contributes to the fetal portion of the placenta, including the villi and villus lakes.",
+    "marks": 4,
+    "negative": 1,
+    "examTagStatus": "unreviewed",
+    "references": "Gray's Anatomy: The Anatomical Basis of Clinical Practice, 41st Edition, Susan Standring PhD DSc, Pg 177\r\nInderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Pg 79, 80",
+    "topic": "004 Placenta, Fetal Membranes And Twinning",
+    "explanationImage": "images/ANAT-004-Q4E.jpg",
+    "type": "mcq",
+    "options": [
+      "Cytotrophoblast and syncytiotrophoblast",
+      "Extraembryonic somatic mesoderm and cytotrophoblast",
+      "Extraembryonic somatic mesoderm and syncytiotrophoblast",
+      "Extraembryonic somatic mesoderm, cytotrophoblast, and syncytiotrophoblast"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "ANAT-004-000005-I",
+    "subject": "Anatomy",
+    "text": "Identify the layers marked as A, B, and C, respectively, in the image of the definitive placenta.",
+    "explanation": "The structures marked in the above image are (A) Langhan's layer, (B) Rohr's layer, and (C) Nitabuch's layer. \r\nThe definitive placenta consists of the chorionic plate on the fetal aspect and a basal plate on the maternal aspect with the intervillous space between them. The structures of the definitive placenta are shown in the image below:",
+    "marks": 4,
+    "negative": 1,
+    "examTagStatus": "unreviewed",
+    "references": "Gray's Anatomy: The Anatomical Basis of Clinical Practice, 41st Edition, Susan Standring PhD DSc, Pg 174\r\nInderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Pg 85",
+    "topic": "004 Placenta, Fetal Membranes And Twinning",
+    "image": "images/ANAT-004-Q5.jpg",
+    "explanationImage": "images/ANAT-004-Q5E.jpg",
+    "type": "mcq",
+    "options": [
+      "Rohr's layer, Langhan's layer, Nitabuch's layer",
+      "Langhan's layer, Rohr's layer, Nitabuch's layer",
+      "Langhan's layer, Nitabuch's layer, Rohr's layer",
+      "Nitabuch's layer, Langhan's layer, Rohr's layer"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "ANAT-004-000006-I",
+    "subject": "Anatomy",
+    "text": "Identify the structures marked as 1 to 4, respectively, in the chorionic plate of the placental tissue as depicted below.",
+    "explanation": "The structures labeled in the above image of the chorionic plate (fetal component) are \r\n(1) amnion, \r\n(2) extraembryonic mesoderm, \r\n(3) cytotrophoblast, and \r\n(4) syncytiotrophoblast.",
+    "marks": 4,
+    "negative": 1,
+    "examTagStatus": "unreviewed",
+    "references": "Gray's Anatomy: The Anatomical Basis of Clinical Practice, 41st Edition, Susan Standring PhD DSc, Pg 174\r\nInderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Pg 85",
+    "topic": "004 Placenta, Fetal Membranes And Twinning",
+    "image": "images/ANAT-004-Q6.jpg",
+    "explanationImage": "images/ANAT-004-Q6E.jpg",
+    "type": "mcq",
+    "options": [
+      "Amnion, extraembryonic mesoderm, syncytiotrophoblast, cytotrophoblast",
+      "Extraembryonic mesoderm, amnion, syncytiotrophoblast, cytotrophoblast",
+      "Amnion, extraembryonic mesoderm, cytotrophoblast, syncytiotrophoblast",
+      "Extraembryonic mesoderm, amnion, cytotrophoblast, syncytiotrophoblast"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "ANAT-004-000007-I",
+    "subject": "Anatomy",
+    "text": "Which of the following is present in the intervillous space of placenta?",
+    "explanation": "The intervillous space between the chorionic plate and the basal plate of the placenta contains only maternal blood. Fetal blood circulates in the blood vessels in the villi. Maternal blood flows into the lacunar spaces of the syncytiotrophoblast as early as the 9th day of pregnancy. After the formation of chorionic villi, the lacunar space is known as the intervillous space. Eroded uterine spiral arteries empty into the intervillous space and immerse the chorionic villi in maternal blood. In the fully formed placenta, the intervillous spaces contain about 150 mL of blood that is replaced every 15–20 seconds (i.e. three to four times per minute).",
+    "marks": 4,
+    "negative": 1,
+    "examTagStatus": "unreviewed",
+    "references": "Gray's Anatomy: The Anatomical Basis of Clinical Practice, 41st Edition, Susan Standring PhD DSc, Pg 175, 176\r\nInderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Pg 83",
+    "topic": "004 Placenta, Fetal Membranes And Twinning",
+    "explanationImage": "images/ANAT-004-Q7E.jpg",
+    "type": "mcq",
+    "options": [
+      "Maternal blood",
+      "Fetal blood",
+      "Maternal and fetal blood",
+      "Amniotic fluid"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "ANAT-004-000008-I",
+    "subject": "Anatomy",
+    "text": "Which of the following are macrophages present in the mesoderm of the chorionic villus?",
+    "explanation": "Hofbauer cells are fetal-derived macrophages present in the placenta. \r\nHofbauer cells are large (10–30 µm), pleomorphic cells, with highly vacuolated and granular cytoplasm. They are seen in the fetal villi of the placenta from the first trimester of pregnancy until birth. \r\nThe role of Hofbauer cells is not established yet, but they are thought to play a gate-keeper role in preventing the transmission of pathogens from the mother to the fetus.",
+    "marks": 4,
+    "negative": 1,
+    "examTagStatus": "unreviewed",
+    "references": "Gray's Anatomy: The Anatomical Basis of Clinical Practice, 41st Edition, Susan Standring PhD DSc, Pg 177\r\nOnline Resource, Online Resource, J Innate Immun 2019;11:447–456. Accessed at\r\nhttps://www.karger.com/Article/FullText/497416",
+    "topic": "004 Placenta, Fetal Membranes And Twinning",
+    "type": "mcq",
+    "options": [
+      "Langhans cells",
+      "Nitabuch’s cells",
+      "Hofbauer cells",
+      "Rohr's cells"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "ANAT-004-000009-I",
+    "subject": "Anatomy",
+    "text": "Fertilization, as shown in the image, will result in twins that are _____________",
+    "explanation": "The above image shows the fertilization of two different ova by two different sperms that will result in dizygotic twins, each with its own chorion and amnion (bichorial, biamnionic). \r\nDizygotic twins arise from two oocytes that mature during the same menstrual cycle and are fertilized by two different sperm cells. Thus, dizygotic twins can be of the same or opposite sex. Dizygotic embryos implant separately and develop membranes that are independent of each other. Each twin has its own placenta, its own chorion, and its own amniotic cavity. \r\nDizygotic twins are more common than monozygotic twins. They are also known as fraternal twins, sibling twins, or false twins because genetically they are as different as two separately born siblings of the same biological parents. \r\nThe image given below shows how fertilization occurs in fraternal and identical twins.",
+    "marks": 4,
+    "negative": 1,
+    "examTagStatus": "unreviewed",
+    "references": "Gray's Anatomy: The Anatomical Basis of Clinical Practice, 41st Edition, Susan Standring PhD DSc, Pg 168\r\nInderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Pg 93",
+    "topic": "004 Placenta, Fetal Membranes And Twinning",
+    "image": "images/ANAT-004-Q9.jpg",
+    "explanationImage": "images/ANAT-004-Q9E.jpg",
+    "type": "mcq",
+    "options": [
+      "Dizygotic, Bichorial, Biamniotic",
+      "Dizygotic, Monochorial, Biamniotic",
+      "Monozygotic, Monochorial, Biamniotic",
+      "Monozygotic, Monochorial, Monoamniotic"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "ANAT-004-000010-I",
+    "subject": "Anatomy",
+    "text": "On USG examination of a pregnant woman at 15 weeks gestation, the following finding was noted. Which of the following events will result in the development of this condition?",
+    "explanation": "The USG examination is suggestive of monozygotic, monochorionic, monoamniotic twins. Duplication of the embryonic disc between the 8-12 days after fertilization will result in the development of this condition. \r\nAt this stage, the amniotic sac is already formed. In this case, the two fetuses share a common chorion and common amniotic cavity. \r\nThe image given below shows a diagrammatic representation of the placentation.",
+    "marks": 4,
+    "negative": 1,
+    "examTagStatus": "unreviewed",
+    "references": "Gray's Anatomy: The Anatomical Basis of Clinical Practice, 41st Edition, Susan Standring PhD DSc, Pg 168\r\nInderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Pg 94, 95",
+    "topic": "004 Placenta, Fetal Membranes And Twinning",
+    "explanationImage": "images/ANAT-004-Q10E.jpg",
+    "type": "mcq",
+    "options": [
+      "Early blastomere separation",
+      "Duplication of inner cell mass before amniotic sac formation",
+      "Duplication of embryonic disc between 4 -7 days after fertilization",
+      "Duplication of embryonic disc between 8 - 12 days after fertilization"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "ANAT-004-000011-I",
+    "subject": "Anatomy",
+    "text": "The following finding was noted in the twins that were delivered a couple of hours ago. Identify the condition.",
+    "explanation": "The image shows conjoined twins with fusion in the sacral region, which is known as the pygopagus. \r\nIn monochorionic monoamniotic twinning, incomplete duplication of the embryonic disc can occur. Incomplete separation of the monozygotic twins results in the birth of two infants that are joined or fused together at some part of the body. These twins are known as conjoined twins or Siamese twins. Depending on the degree of incomplete separation, different types of conjoined twins can form:",
+    "marks": 4,
+    "negative": 1,
+    "examTagStatus": "unreviewed",
+    "references": "Inderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Pg 95\r\nOnline Resource, Online Resource, Med J Armed Forces India. 2002 Apr; 58(2): 163–164. Accessed\r\nathttps://www.ncbi.nlm.nih.gov/pmc/articles/PMC4923928/\r\nWilliams Obstetrics 25th Ed, Barbara L. Hoffman, Catherine Y. Spong, Jodi S. Dashe, Steven L. Bloom, Page 876",
+    "topic": "004 Placenta, Fetal Membranes And Twinning",
+    "image": "images/ANAT-004-Q11.jpg",
+    "explanationImage": "images/ANAT-004-Q11E.jpg",
+    "type": "mcq",
+    "options": [
+      "Heteropagous",
+      "Xiphipagous",
+      "Omphalopagous",
+      "Pygopagus"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "ANAT-004-000012-I",
+    "subject": "Anatomy",
+    "text": "A pregnant lady comes for a routine antenatal checkup during the first trimester. USG examination reveals the following finding. Identify the type of twins in this patient.",
+    "explanation": "The given scenario is suggestive of dichorionic, diamniotic twins. The image shows two separate amniotic cavities (diamniotic) and lambda sign (dichorionic). In dichorionic twins, there is a thick triangular projection of placental tissue between the two gestational sacs. This is known as the lambda sign or twin peak sign. The following image shows the lambda/twin peak. Dichorial, diamniotic twins can occur in 2 instances: \r\n• Dizygotic twins: The two fertilized ova get implanted at two separate sites and develop separate chorion and two separate amniotic cavities \r\n• Monozygotic twins: With early blastomere separation (up to 3rd day after fertilization), the two embryos formed will have separate chorionic and amniotic sacs, similar to dizygotic twins.",
+    "marks": 4,
+    "negative": 1,
+    "examTagStatus": "unreviewed",
+    "references": "Gray's Anatomy: The Anatomical Basis of Clinical Practice, 41st Edition, Susan Standring PhD DSc, Pg 168\r\nInderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Pg 93, 94",
+    "topic": "004 Placenta, Fetal Membranes And Twinning",
+    "image": "images/ANAT-004-Q12.jpg",
+    "explanationImage": "images/ANAT-004-Q12E.jpg",
+    "type": "mcq",
+    "options": [
+      "Dichorionic, monoamniotic",
+      "Dichorionic, Diamniotic",
+      "Monochorionic, Diamniotic",
+      "Monochorionic, Monoamniotic"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "ANAT-004-000013-I",
+    "subject": "Anatomy",
+    "text": "A 37-year-old man is diagnosed with renal failure and is advised to undergo renal transplantation. The patient has a twin brother who is willing to donate his kidney. Which of the following types of twins are HLA identical, hence the recepient twin does not require immunosuppression?",
+    "explanation": "All monozygotic twins are of the same gender, genetically identical, have identical HLA genes, regardless of the stage of separation of the cell mass. \r\nAll monozygotic twins develop from a single zygote that is formed as a result of the fertilization of a single oocyte with a single sperm. At a later stage, there is a separation of the blastomeres, inner cell mass, or embryonic disc to give rise to twins. Since they are formed from a single zygote, the twins have similar genetic composition.",
+    "marks": 4,
+    "negative": 1,
+    "examTagStatus": "unreviewed",
+    "references": "Gray's Anatomy: The Anatomical Basis of Clinical Practice, 41st Edition, Susan Standring PhD DSc, Pg 168\r\nInderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Pg 93",
+    "topic": "004 Placenta, Fetal Membranes And Twinning",
+    "type": "mcq",
+    "options": [
+      "1 only",
+      "2 and 3",
+      "3 only",
+      "1, 2, and 3"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "ANAT-004-000014-I",
+    "subject": "Anatomy",
+    "text": "Identify the type of twin babies shown in the image below.",
+    "explanation": "The image shows monozygotic, monochorial, monoamniotic twins. It depicts that a single zygote has separated between 8-13 days and therefore resulted in twins implanted at one site, having the same chorion and having a single amniotic cavity. The monozygotic, monochorionic, monoamniotic twins develop due to the duplication of the embryonic disc after the amniotic sac is already formed, i.e., between the 8th and 12th day after fertilization.",
+    "marks": 4,
+    "negative": 1,
+    "examTagStatus": "unreviewed",
+    "references": "Gray's Anatomy: The Anatomical Basis of Clinical Practice, 41st Edition, Susan Standring PhD DSc, Pg 168\r\nInderbir Singh's Human Embryology - 11th Edition, Inderbir Singh, Pg 94",
+    "topic": "004 Placenta, Fetal Membranes And Twinning",
+    "image": "images/ANAT-004-Q14.jpg",
+    "type": "mcq",
+    "options": [
+      "Dizygotic",
+      "Monozygotic, Bichorial, Biamniotic",
+      "Monozygotic, Monochorial, Biamniotic",
+      "Monozygotic, Monochorial, Monoamniotic"
+    ],
+    "correctIndex": 3
   }
 ];
