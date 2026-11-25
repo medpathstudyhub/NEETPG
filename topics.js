@@ -138,5 +138,8 @@ window.TOPIC_CATALOG = {
     "061 Muscles And Tendons",
     "062 Cardiovascular, Lymphatic And Nervous Systems",
     "063 Skin, Connective Tissue And Ligaments"
+  ],
+  "Microbiology": [
+    "001 General Microbiology"
   ]
 };
