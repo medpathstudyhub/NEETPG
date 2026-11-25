@@ -10,7 +10,7 @@ window.MEDPATH_QUESTION_PARTS["microbiology"] = [
     "negative": 1,
     "type": "mcq",
     "examTags": [
-      "NEET_PG"
+      "BOTH"
     ],
     "topic": "001 General Microbiology",
     "options": [
