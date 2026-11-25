@@ -2,41 +2,18 @@
 const cfg=window.MEDPATH_LIBRARY_CONFIG||{};
 if(!window.supabase?.createClient||!window.pdfjsLib)return;
 window.pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
-const db=window.supabase.createClient(cfg.supabaseUrl,cfg.supabasePublishableKey);
-const $=id=>document.getElementById(id);
-let doc=null,pageNo=1,autoRead=false;
-function stop(){autoRead=false;window.speechSynthesis?.cancel()}
-async function open(bucket,path,title){
- stop();$('readerModal').classList.remove('hidden');$('readerTitle').textContent=title;$('readerStatus').textContent='Opening secure PDF…';
- try{const r=await db.storage.from(bucket).createSignedUrl(path,600);if(r.error)throw r.error;doc=await window.pdfjsLib.getDocument({url:r.data.signedUrl}).promise;pageNo=1;$('readerStatus').textContent=doc.numPages+' pages';await render()}
- catch(e){$('readerStatus').textContent='Unable to open PDF: '+e.message}
-}
-async function render(){
- if(!doc)return;
- const page=await doc.getPage(pageNo),v0=page.getViewport({scale:1}),scale=Math.min(1.5,Math.max(.75,(window.innerWidth-400)/v0.width)),viewport=page.getViewport({scale});
- const canvas=$('readerCanvas'),ctx=canvas.getContext('2d');canvas.width=viewport.width;canvas.height=viewport.height;await page.render({canvasContext:ctx,viewport}).promise;
- const content=await page.getTextContent(),txt=content.items.map(x=>x.str).join(' ').replace(/\s+/g,' ').trim();
- $('readerText').textContent=txt||'No selectable text on this page. This may be a scanned page; OCR is needed before narration.';
- $('readerPageLabel').textContent='Page '+pageNo+' of '+doc.numPages;$('readerPrev').disabled=pageNo<=1;$('readerNext').disabled=pageNo>=doc.numPages;
- $('readerListen').disabled=!txt;$('readerListenAll').disabled=!txt;$('readerStatus').textContent='Page '+pageNo+' of '+doc.numPages+' · '+(txt?txt.length+' characters':'No selectable text');
-}
-function speak(all){
- if(!window.speechSynthesis){alert('Text-to-speech is not supported in this browser. Please try Chrome or Edge.');return}
- const t=$('readerText').textContent;if(!t||t.startsWith('No selectable text'))return;stop();autoRead=all;
- const u=new SpeechSynthesisUtterance(t);u.rate=Number($('readerSpeed').value)||1;
- u.onend=async()=>{if(autoRead&&doc&&pageNo<doc.numPages){pageNo++;await render();speak(true)}else autoRead=false};u.onerror=()=>autoRead=false;window.speechSynthesis.speak(u);
-}
-document.addEventListener('click',async e=>{
- const b=e.target.closest('[data-open],[data-personal-open]');if(!b)return;
- e.preventDefault();e.stopImmediatePropagation();
- try{
-  if(b.hasAttribute('data-open')){const id=b.getAttribute('data-open'),r=await db.from('books').select('title,storage_path').eq('id',id).single();if(r.error)throw r.error;await open('medpath-books',r.data.storage_path,r.data.title)}
-  else{const id=b.getAttribute('data-personal-open'),r=await db.from('student_uploads').select('title,storage_path').eq('id',id).single();if(r.error)throw r.error;await open('student-private',r.data.storage_path,r.data.title)}
- }catch(err){alert('Could not open PDF: '+err.message)}
-},true);
-$('readerClose').addEventListener('click',()=>{$('readerModal').classList.add('hidden');stop();doc=null});
-$('readerPrev').addEventListener('click',async()=>{stop();if(pageNo>1){pageNo--;await render()}});
-$('readerNext').addEventListener('click',async()=>{stop();if(doc&&pageNo<doc.numPages){pageNo++;await render()}});
-$('readerListen').addEventListener('click',()=>speak(false));$('readerListenAll').addEventListener('click',()=>speak(true));$('readerStop').addEventListener('click',stop);
-$('readerSpeed').addEventListener('change',()=>{if(window.speechSynthesis?.speaking){const all=autoRead;stop();speak(all)}});
+const db=window.supabase.createClient(cfg.supabaseUrl,cfg.supabasePublishableKey),$=id=>document.getElementById(id);
+let doc=null,pageNo=1,autoRead=false,voiceList=[],speechToken=0,chapterItems=[];
+function stop(){autoRead=false;speechToken++;window.speechSynthesis?.cancel()}
+function getVoice(){const uri=$('readerVoice').value;return voiceList.find(v=>v.voiceURI===uri)||voiceList.find(v=>/^en-IN$/i.test(v.lang))||voiceList.find(v=>/^en-(GB|US)/i.test(v.lang))||null}
+function loadVoices(){if(!window.speechSynthesis)return;voiceList=window.speechSynthesis.getVoices()||[];const sel=$('readerVoice'),chosen=sel.value;sel.innerHTML='';const sorted=voiceList.slice().sort((a,b)=>{const rank=v=>/^en-IN$/i.test(v.lang)?0:/^en-GB$/i.test(v.lang)?1:/^en-US$/i.test(v.lang)?2:3;return rank(a)-rank(b)||a.name.localeCompare(b.name)});sorted.forEach(v=>{const o=document.createElement('option');o.value=v.voiceURI;o.textContent=v.name+' ('+v.lang+')'+(/^en-IN$/i.test(v.lang)?' · Indian English':'');sel.appendChild(o)});if(!sorted.length){sel.innerHTML='<option value="">No system voices available</option>';return}sel.value=chosen&&sorted.some(v=>v.voiceURI===chosen)?chosen:(sorted.find(v=>/^en-IN$/i.test(v.lang))||sorted.find(v=>/^en-GB$/i.test(v.lang))||sorted[0]).voiceURI}
+function cleanMedicalText(s){return s.replace(/\bDr\./g,'Doctor ').replace(/\bNo\./g,'number ').replace(/\be\.g\./gi,'for example ').replace(/\bi\.e\./gi,'that is ').replace(/\bvs\./gi,'versus ').replace(/\bFig\./gi,'Figure ').replace(/\bapprox\./gi,'approximately ').replace(/\s+/g,' ').trim()}
+function chunks(s){const text=cleanMedicalText(s),sentences=text.match(/[^.!?]+[.!?]+|[^.!?]+$/g)||[text],out=[];let part='';sentences.forEach(x=>{if((part+' '+x).length>260&&part){out.push(part.trim());part=''}part+=' '+x});if(part.trim())out.push(part.trim());return out}
+function speak(all){if(!window.speechSynthesis){alert('Text-to-speech is not supported in this browser. Try current Chrome or Edge.');return}const raw=$('readerText').textContent;if(!raw||raw.startsWith('No selectable text'))return;stop();autoRead=all;const token=speechToken;const parts=chunks(raw);let i=0;function next(){if(token!==speechToken)return;if(i>=parts.length){if(autoRead&&doc&&pageNo<doc.numPages){pageNo++;render().then(()=>{if(token===speechToken)speak(true)})}else autoRead=false;return}const u=new SpeechSynthesisUtterance(parts[i++]);u.rate=Number($('readerSpeed').value)||1;u.pitch=1;const v=getVoice();if(v)u.voice=v;u.lang=v?.lang||'en-IN';u.onend=()=>{if(token===speechToken)setTimeout(next,180)};u.onerror=()=>{if(token===speechToken)autoRead=false};window.speechSynthesis.speak(u)}next()}
+async function resolveOutline(items,parent){const out=[];for(const item of items||[]){let page=1;try{let dest=item.dest;if(typeof dest==='string')dest=await doc.getDestination(dest);if(dest){const ref=dest[0],idx=await doc.getPageIndex(ref);page=idx+1}}catch(e){}const node={title:item.title||'Untitled section',page,children:await resolveOutline(item.items,parent)};out.push(node)}return out}
+function renderOutline(nodes,container,level=0){nodes.forEach(node=>{const b=document.createElement('button');b.className='lib-outline-item';b.textContent=node.title;b.title='Go to PDF page '+node.page;b.style.marginLeft=(level*8)+'px';b.addEventListener('click',async()=>{stop();pageNo=Math.min(doc.numPages,Math.max(1,node.page));await render();document.querySelectorAll('.lib-outline-item').forEach(x=>x.classList.remove('active'));b.classList.add('active')});container.appendChild(b);if(node.children?.length){const wrap=document.createElement('div');wrap.className='lib-outline-nested';container.appendChild(wrap);renderOutline(node.children,wrap,level+1)}})}
+async function open(bucket,path,title){stop();$('readerModal').classList.remove('hidden');$('readerTitle').textContent=title;$('readerStatus').textContent='Opening secure PDF…';$('readerOutline').innerHTML='';$('readerIndexHint').textContent='Checking PDF bookmarks…';try{const r=await db.storage.from(bucket).createSignedUrl(path,600);if(r.error)throw r.error;doc=await window.pdfjsLib.getDocument({url:r.data.signedUrl}).promise;pageNo=1;const outline=await doc.getOutline();chapterItems=await resolveOutline(outline||[]);if(chapterItems.length){$('readerIndexHint').textContent='Select a chapter or section to jump directly to its page.';renderOutline(chapterItems,$('readerOutline'))}else{$('readerIndexHint').textContent='This PDF has no built-in bookmarks. A chapter index can be added by the Library administrator.'} $('readerStatus').textContent=doc.numPages+' pages';await render()}catch(e){$('readerStatus').textContent='Unable to open PDF: '+e.message}}
+async function render(){if(!doc)return;const page=await doc.getPage(pageNo),v0=page.getViewport({scale:1}),scale=Math.min(1.5,Math.max(.75,(window.innerWidth-650)/v0.width)),viewport=page.getViewport({scale});const canvas=$('readerCanvas'),ctx=canvas.getContext('2d');canvas.width=viewport.width;canvas.height=viewport.height;await page.render({canvasContext:ctx,viewport}).promise;const content=await page.getTextContent(),txt=content.items.map(x=>x.str).join(' ').replace(/\s+/g,' ').trim();$('readerText').textContent=txt||'No selectable text on this page. This may be a scanned page; OCR is needed before narration.';$('readerPageLabel').textContent='Page '+pageNo+' of '+doc.numPages;$('readerPrev').disabled=pageNo<=1;$('readerNext').disabled=pageNo>=doc.numPages;$('readerListen').disabled=!txt;$('readerListenAll').disabled=!txt;$('readerStatus').textContent='Page '+pageNo+' of '+doc.numPages+' · '+(txt?txt.length+' characters':'No selectable text');const pct=Math.round(pageNo/doc.numPages*100);$('readerProgress').value=pct;$('readerProgressLabel').textContent=pct+'%'}
+document.addEventListener('click',async e=>{const b=e.target.closest('[data-open],[data-personal-open]');if(!b)return;e.preventDefault();e.stopImmediatePropagation();try{if(b.hasAttribute('data-open')){const r=await db.from('books').select('title,storage_path').eq('id',b.getAttribute('data-open')).single();if(r.error)throw r.error;await open('medpath-books',r.data.storage_path,r.data.title)}else{const r=await db.from('student_uploads').select('title,storage_path').eq('id',b.getAttribute('data-personal-open')).single();if(r.error)throw r.error;await open('student-private',r.data.storage_path,r.data.title)}}catch(err){alert('Could not open PDF: '+err.message)}},true);
+$('readerClose').addEventListener('click',()=>{$('readerModal').classList.add('hidden');stop();doc=null});$('readerPrev').addEventListener('click',async()=>{stop();if(pageNo>1){pageNo--;await render()}});$('readerNext').addEventListener('click',async()=>{stop();if(doc&&pageNo<doc.numPages){pageNo++;await render()}});$('readerListen').addEventListener('click',()=>speak(false));$('readerListenAll').addEventListener('click',()=>speak(true));$('readerStop').addEventListener('click',stop);$('readerPause').addEventListener('click',()=>window.speechSynthesis?.pause());$('readerResume').addEventListener('click',()=>window.speechSynthesis?.resume());$('readerSpeed').addEventListener('change',()=>{if(window.speechSynthesis?.speaking){const all=autoRead;stop();speak(all)}});if(window.speechSynthesis){loadVoices();window.speechSynthesis.onvoiceschanged=loadVoices}
 })();
