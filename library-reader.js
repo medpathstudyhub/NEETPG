@@ -8,7 +8,7 @@ let doc=null,pageNo=1,autoRead=false,paused=false,voices=[],queue=[],queueIndex=
 function status(message){$('readerStatus').textContent=message}
 function stop(){autoRead=false;paused=false;queue=[];queueIndex=0;if(delayTimer){clearTimeout(delayTimer);delayTimer=null}window.speechSynthesis?.cancel();updateSpeechButtons()}
 function updateSpeechButtons(){
- $('readerPause').disabled=!window.speechSynthesis?.speaking&&!paused;
+ $('readerPause').disabled=!autoRead||paused;
  $('readerResume').disabled=!paused;
  $('readerStop').disabled=!autoRead&&!paused&&!window.speechSynthesis?.speaking;
 }
