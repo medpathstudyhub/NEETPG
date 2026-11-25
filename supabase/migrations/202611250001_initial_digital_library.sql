@@ -140,7 +140,7 @@ alter table public.admin_access_audit enable row level security;
 revoke all on public.profiles, public.books, public.student_uploads, public.admin_access_audit from anon, authenticated;
 grant select on public.profiles to authenticated;
 grant update (display_name) on public.profiles to authenticated;
-grant select on public.books to authenticated;
+grant select, insert, update, delete on public.books to authenticated;
 grant select, insert, update, delete on public.student_uploads to authenticated;
 grant select on public.admin_access_audit to authenticated;
 
