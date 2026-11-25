@@ -3,5 +3,5 @@
    NEVER paste an sb_secret_ key or service_role key here. */
 window.MEDPATH_LIBRARY_CONFIG = {
   supabaseUrl: "https://jzhxnhncluxijbipecdn.supabase.co",
-  supabasePublishableKey: "PASTE_YOUR_SUPABASE_PUBLISHABLE_KEY_HERE"
+  supabasePublishableKey: "sb_publishable_W0MExCCJkGUVNfhXA8Mm4g_nTdR6Rne"
 };
