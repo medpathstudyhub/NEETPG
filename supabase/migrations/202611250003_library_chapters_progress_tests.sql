@@ -82,7 +82,7 @@ for insert to authenticated with check (
 drop policy if exists "students update own chapter progress" on public.book_chapter_progress;
 create policy "students update own chapter progress" on public.book_chapter_progress
 for update to authenticated using (user_id = (select auth.uid()) and public.is_medpath_active_user())
-with check (user_id = (select auth.uid()) and public.is_medpath_active_user());
+with check (user_id = (select auth.uid()) and public.is_medpath_active_user() and exists (select 1 from public.book_chapters c join public.books b on b.id=c.book_id where c.id=chapter_id and b.is_published));
 
 drop policy if exists "students read own chapter tests" on public.chapter_test_attempts;
 create policy "students read own chapter tests" on public.chapter_test_attempts
