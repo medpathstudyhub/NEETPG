@@ -12,7 +12,7 @@ window.MEDPATH_QUESTION_PARTS["microbiology"] = [
     "examTags": [
       "NEET_PG"
     ],
-    "topic": "001  General Microbiology",
+    "topic": "001 General Microbiology",
     "options": [
       "Above the stage",
       "Below the stage",
