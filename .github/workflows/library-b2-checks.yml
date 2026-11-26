@@ -1,0 +1,32 @@
+name: Digital Library B2 checks
+
+on:
+  pull_request:
+    paths:
+      - "library.js"
+      - "library-reader.js"
+      - "supabase/functions/library-b2/**"
+      - ".github/workflows/library-b2-checks.yml"
+
+jobs:
+  browser-script-syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Check library browser JavaScript syntax
+        run: |
+          node --check library.js
+          node --check library-reader.js
+
+  edge-function-types:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+      - name: Type-check B2 gateway
+        run: deno check --no-lock supabase/functions/library-b2/index.ts
