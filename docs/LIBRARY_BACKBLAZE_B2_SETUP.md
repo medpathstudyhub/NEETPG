@@ -30,8 +30,9 @@ Supabase already provides `SUPABASE_URL` and the user-facing publishable/anon ke
 1. Apply `supabase/migrations/202611260001_library_b2_storage.sql` to the dedicated `MEDPATH-DIGITAL-LIBRARY-STAGING` project only.
 2. In Supabase Dashboard → Edge Functions → Secrets, add the five B2 secrets above. Never share their values.
 3. Deploy the `library-b2` Edge Function from this repository to the same staging project.
-4. Configure B2 bucket CORS for the exact site origin `https://medpathstudyhub.github.io`, methods GET, HEAD and PUT, request headers needed for PDF range requests and Content-Type, and expose Content-Length, Content-Range, Accept-Ranges, ETag and Content-Type. Test PDF.js range loading and browser uploads before enabling for students.
-5. Confirm the Backblaze application key permits S3 GetObject, PutObject and DeleteObject for the bucket/prefix.
+4. Configure B2 bucket CORS using the S3-Compatible API for the exact site origin `https://medpathstudyhub.github.io`. Allow GET, HEAD and PUT; allow the headers used by browser PDF requests (including `Range` and `Content-Type`); expose `Content-Length`, `Content-Range`, `Accept-Ranges`, `ETag` and `Content-Type`. Backblaze documents its S3 CORS differences here: https://www.backblaze.com/docs/cloud-storage-enable-cors-with-the-s3-compatible-api. Test PDF.js range loading and browser uploads before enabling for students.
+5. Confirm the Backblaze application key permits S3 GetObject, PutObject and DeleteObject for the bucket/prefix. The S3-compatible API requires application key credentials and Signature Version 4; do not use a master key.
+6. Deploy the `library-b2` Edge Function before merging the browser changes to `main`. The GitHub Pages site will start sending new uploads through this function once the frontend PR is merged. Supabase documents how to store secrets in Edge Function Secrets here: https://supabase.com/docs/guides/functions/secrets.
 
 Do not configure production until staging tests pass.
 
@@ -41,6 +42,14 @@ Do not configure production until staging tests pass.
 - Personal PDFs: `library/students/<supabase-user-id>/<server-generated-uuid>.pdf`
 
 The database keeps the existing `storage_path` field for backward compatibility and adds `storage_provider` and `storage_key`. New records identify B2 explicitly; old records remain on Supabase.
+
+## What this code changes
+
+- New student personal PDF uploads and new admin shared-book uploads go to B2.
+- Existing Supabase PDFs continue to open and download from their original private buckets.
+- New B2 PDFs use 5-minute pre-signed upload URLs and 15-minute read/download URLs.
+- The PDF reader obtains a user-authorized URL through the Edge Function; PDF.js then reads the private B2 object directly.
+- Deleting a B2 record deletes the B2 object first and then removes its database row.
 
 ## Required staging tests
 
