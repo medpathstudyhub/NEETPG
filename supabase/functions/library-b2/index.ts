@@ -78,6 +78,17 @@ Deno.serve(async (req) => {
       return json({ uploadUrl, objectKey, expiresIn: 300 });
     }
 
+    if (action === "abort-upload") {
+      if (kind === "shared" && !admin) return json({ error: "Library administrator access required" }, 403);
+      const objectKey = String(body.objectKey || "");
+      const allowedPrefix = kind === "shared" ? `${prefix}shared/` : `${prefix}students/${user.id}/`;
+      if (!objectKey.startsWith(allowedPrefix) || !objectKey.endsWith(".pdf")) {
+        return json({ error: "Upload ownership check failed" }, 403);
+      }
+      await s3.send(new DeleteObjectCommand({ Bucket: bucket, Key: objectKey }));
+      return json({ ok: true });
+    }
+
     const id = String(body.id || "");
     if (!id) return json({ error: "A file ID is required" }, 400);
     let objectKey = "";
