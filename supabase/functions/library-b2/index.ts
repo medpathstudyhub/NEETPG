@@ -34,7 +34,7 @@ Deno.serve(async (req) => {
   if (req.method === "OPTIONS") return new Response("ok", { headers: corsHeaders });
   if (req.method !== "POST") return json({ error: "Method not allowed" }, 405);
   const origin = req.headers.get("origin");
-  if (origin && origin !== "https://medpathstudyhub.github.io" && !origin.startsWith("http://localhost:")) {
+  if (origin && origin !== "https://medpathstudyhub.github.io") {
     return json({ error: "Origin not allowed" }, 403);
   }
 
