@@ -81,7 +81,8 @@ Deno.serve(async (req) => {
       global: { headers: { Authorization: authorization } },
       auth: { persistSession: false, autoRefreshToken: false },
     });
-    const { data: authData, error: authError } = await db.auth.getUser();
+    const jwt = authorization.slice("Bearer ".length);
+    const { data: authData, error: authError } = await db.auth.getUser(jwt);
     if (authError || !authData.user) return json({ error: "Your session is invalid. Please sign in again." }, 401, origin);
     const user = authData.user;
 
