@@ -1,0 +1,4 @@
+project_id = "jzhxnhncluxijbipecdn"
+
+[functions.library-storage]
+verify_jwt = true
