@@ -26,7 +26,7 @@ Configure these in Supabase Dashboard → Edge Functions → Secrets:
 
 Supabase provides `SUPABASE_URL` and its publishable key environment variables to Edge Functions. Do not add a service-role key for this function.
 
-The Backblaze application key must be restricted to the `medpath-library-private` bucket and the `library/` filename prefix. The function needs read and write permissions. If permanent delete is enabled in the UI, the key also needs the Backblaze `deleteFiles` capability; Backblaze documents that S3 Delete Object by name generally needs both `writeFiles` and `deleteFiles`.
+The Backblaze application key must be restricted to the `medpath-library-private` bucket and the `library/` filename prefix. The function needs `readFiles` and `writeFiles`. The Backblaze console's broad “Read and Write” label does not by itself confirm the separate delete capability: verify that this key also has `deleteFiles` if you want the app's permanent-delete buttons to remove B2 objects. Backblaze documents that S3 Delete Object by name generally needs both `writeFiles` and `deleteFiles`. If the current key lacks it, uploads and reads can still work, but B2 deletion will be rejected until the key is recreated with that capability.
 
 ## Deployment
 
