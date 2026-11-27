@@ -3,5 +3,7 @@
    NEVER paste an sb_secret_ key or service_role key here. */
 window.MEDPATH_LIBRARY_CONFIG = {
   supabaseUrl: "https://jzhxnhncluxijbipecdn.supabase.co",
-  supabasePublishableKey: "sb_publishable_W0MExCCJkGUVNfhXA8Mm4g_nTdR6Rne"
+  supabasePublishableKey: "sb_publishable_W0MExCCJkGUVNfhXA8Mm4g_nTdR6Rne",
+  // Keep false until B2 secrets, CORS and the Edge Function are configured and tested.
+  enableB2Storage: false
 };
