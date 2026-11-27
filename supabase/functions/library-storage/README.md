@@ -56,7 +56,7 @@ If testing locally, temporarily add the exact local development origin you use. 
 - `resolve`: checks published/download/ownership permissions and returns a one-hour presigned GET URL for B2 files. Legacy Supabase files are identified for the browser's existing signed-URL flow.
 - `delete`: checks admin/owner permissions before deleting a B2 object and its metadata. Legacy Supabase files continue using the existing Supabase Storage deletion path.
 
-## First rollout checklist
+## Browser rollout switch\n\nThe browser configuration includes `enableB2Storage: false` by default. Keep it false while preparing the Supabase function and B2 bucket. After secrets, CORS, deployment and the staging tests are complete, change it to `true` in `library-config.js` to route new uploads to B2. With the switch false, new uploads continue using the existing Supabase Storage buckets; existing records remain supported either way.\n\n## First rollout checklist
 
 1. Add the five B2 secrets in Supabase; do not paste them into GitHub or chat.
 2. Confirm the application key has `readFiles` and `writeFiles`. Confirm `deleteFiles` too if delete is required.
