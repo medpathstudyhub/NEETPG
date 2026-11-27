@@ -125,9 +125,16 @@ Deno.serve(async (req) => {
       if (kind === "book" && !admin) return json({ error: "Administrator access is required." }, 403, origin);
       const head = await s3.send(new HeadObjectCommand({ Bucket: BUCKET, Key: key }));
       const actualSize = Number(head.ContentLength ?? 0);
-      if (actualSize < 1 || actualSize > MAX_BYTES || head.ContentType?.toLowerCase() !== "application/pdf") {
+      if (actualSize < 5 || actualSize > MAX_BYTES || head.ContentType?.toLowerCase() !== "application/pdf") {
         await s3.send(new DeleteObjectCommand({ Bucket: BUCKET, Key: key })).catch(() => undefined);
         return json({ error: "The uploaded file is not a valid PDF within the 50 MB limit." }, 400, origin);
+      }
+      const sample = await s3.send(new GetObjectCommand({ Bucket: BUCKET, Key: key, Range: "bytes=0-4" }));
+      const signatureBytes = await sample.Body?.transformToByteArray();
+      const signature = signatureBytes ? new TextDecoder().decode(signatureBytes) : "";
+      if (signature !== "%PDF-") {
+        await s3.send(new DeleteObjectCommand({ Bucket: BUCKET, Key: key })).catch(() => undefined);
+        return json({ error: "The uploaded file does not have a valid PDF signature." }, 400, origin);
       }
       const meta = body.metadata ?? {};
       let insertRow: Record<string, unknown>;
